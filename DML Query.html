@@ -24,18 +24,64 @@ When I have sometime, I will publish this sample on a GitHub.com page.
 
 		2019-09-12T14:57:00	https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableElement/createCaption
 		2019-09-12T17:02:00	https://flaviocopes.com/javascript-regular-expressions/
-		2019-09-12T19:10:00	https://kenadeniji.github.io/Github/DML%20Query.html
-		2019-09-12T19:18:00	The initiative for this project came, when I was preparing SQL files for later running on a database installation.
+		2019-09-12T05:35:00	https://stackoverflow.com/questions/5158338/how-to-convert-a-collection-to-an-array-in-javascript
 	-->
 
 	<head>
 		<title>Data Manipulation Language (DML) Query.</title>
-		<link rel="stylesheet" type="text/css" href="./9432.css">
 		<style>
 			textarea{ //viewport
 			height: 65vh;
 			width: 90vw;
 			}
+body {
+	/* background-color: #FF9500; */
+	border: 5px solid black;
+	margin: 0 auto;
+	padding: 0 20px 20px 20px;  
+	/* width: 600px; */
+}
+
+.focus {
+  background-color: #ff00ff;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* div inside a div, border. */
+div > div {
+	border: 1px solid #ccc;
+} 
+
+html {
+	background-color: #00539F;
+}
+
+table {
+   border: 1px solid black;
+   border-spacing: 5px;
+   border-collapse: separate;
+   /* width:100%; */ 
+}
+
+th, td { 
+	padding:5px 10px; border:#4e95f4 1px solid;
+}
+
+/*  Define the background color for all the ODD background rows  */
+tr:nth-child(odd) { 
+	background: #b8d1f3;
+}
+
+/*  Define the background color for all the EVEN background rows  */
+tr:nth-child(even) {
+	background: #dae5f4;
+}
+
+#resultSetSQLStatement {background:black; color:lightblue;}
+
+/* Responsive design base font size */			
 		</style>
 	</head>	
 	<body>
@@ -154,7 +200,6 @@ When I have sometime, I will publish this sample on a GitHub.com page.
 			{
 				resultSetID.innerHTML = "";
 				
-				//var regexp = /\b(?:Delete2|Insert|Select|Update|Delete)\b/gi;
 				var regexp = /Delete|Insert|Select|Update/gi;
 				
 				var input = dmlID.value.trim();
@@ -188,7 +233,7 @@ matches; /* gives exactly what i want, but abuses `replace`,
 					var currentMatchIndex = currentMatch.index;
 					
 					if (matchIndex < matchCount - 1)
-					{
+					{	//If this is the not last match, extract to the next.
 						currentMatchExtract = input.substring
 						(
 							currentMatch.index,
@@ -196,18 +241,18 @@ matches; /* gives exactly what i want, but abuses `replace`,
 						);	
 					}
 					else
-					{
+					{	//If this is the last match, extract to the end.
 						currentMatchExtract = input.substring
 						(
 							currentMatch.index
 						);	
 					}
 
+					//Extract the dml type, by retrieving the first six prefix
 					dmlType = currentMatchExtract.substring(0, 6);
 
 					switch(dmlType) {
 						case "DELETE":
-							console.log(dmlType)
 							statementDelete(currentMatchExtract);
 							break;
 						case "INSERT":
@@ -232,6 +277,7 @@ matches; /* gives exactly what i want, but abuses `replace`,
 			
 			function statementDelete(sqlStatement)
 			{
+				//Determine the table name, if the From is present or not.
 				var tableName = "";
 				var tableNameIndexStart = 7;
 				
@@ -243,8 +289,6 @@ matches; /* gives exactly what i want, but abuses `replace`,
 					tableNameIndexStart = 11;
 				}
 				
-				console.log("myTableBody.innerHTML");
-				
 				tableName = sqlStatement.substring(tableNameIndexStart);
 				
 				var tableId = "resultSet_" + tableName;
@@ -252,8 +296,6 @@ matches; /* gives exactly what i want, but abuses `replace`,
 				var tableElement = document.getElementById(tableId);
 				
 				var myTableBody = tableElement.getElementsByTagName("tbody")[0];
-				
-				console.log("myTableBody.innerHTML")
 				
 				while (myTableBody.firstChild) {
 					// This will remove all children within tbody which in your case are <tr> elements
@@ -263,6 +305,7 @@ matches; /* gives exactly what i want, but abuses `replace`,
 
 			function statementInsert(sqlStatement)
 			{
+				//Determine the table name, if the Into is present or not.
 				var tableName = "";
 				var tableNameIndexStart = 7;
 				var regularExpressionInto = /Into/gi;
@@ -277,6 +320,7 @@ matches; /* gives exactly what i want, but abuses `replace`,
 				
 				tableName = sqlStatement.substring(tableNameIndexStart + 1, tableNameIndexEnd);
 				
+				//Retrieve the column list phrase
 				var columnsListIndexStart = sqlStatement.indexOf("(");
 				var columnsListIndexEnd = sqlStatement.indexOf(")", columnsListIndexStart + 1);
 				var columnsList = sqlStatement.substring
@@ -286,6 +330,7 @@ matches; /* gives exactly what i want, but abuses `replace`,
 				);
 				var columnsHeaders = columnsList.split(",")
 				
+				//Retrieve the column value phrase
 				var valuesPhrase = sqlStatement.substring(columnsListIndexEnd);
 				
 				var regularExpressionValues = /Values/gi;
@@ -339,29 +384,16 @@ matches; /* gives exactly what i want, but abuses `replace`,
 					var myTableHead = tableElement.getElementsByTagName("thead")[0];
 					var	myRow = myTableHead.getElementsByTagName("tr")[0];
 					var	myHeadCells = myRow.getElementsByTagName("th");
+					var myHeadCells = Array.prototype.slice.call( myHeadCells, 0 );
 					
 					var tr;
-
+					
+					//For each column, repeat.
 					columnsHeaders.forEach(function(element) {
-						var	myHeaderCellExists = false;
-							
-						for
-						(
-							var headerCellIndex = 0, 
-								headerCellCount = myHeadCells.length;
-								headerCellIndex < headerCellCount;
-								++headerCellIndex
-						)
-						{
-							var myHeadCell = myHeadCells[headerCellIndex];
-							if (myHeadCell.textContent === element)
-							{
-								myHeaderCellExists = true;
-								break;
-							}
-						}	
+						//Does this column name, currently exists in the table.
+						var headCellsIndex = myHeadCells.indexOf(element);
 
-						if (myHeaderCellExists === false)
+						if (headCellsIndex < 0)
 						{
 							var th = document.createElement('th');
 							th.appendChild(document.createTextNode(element))
@@ -397,25 +429,8 @@ matches; /* gives exactly what i want, but abuses `replace`,
 						++columnIndex
 					)
 					{
-						for
-						(
-							var headerCellIndex = 0, 
-								headerCellCount = myHeadCells.length;
-								headerCellIndex < headerCellCount;
-								++headerCellIndex
-						)
-						{
-							var myHeadCell = myHeadCells[headerCellIndex];
-							if 
-							(
-								myHeadCell.textContent === 
-								columnsHeaders[columnIndex]
-							)
-							{
-								tr.cells[headerCellIndex].innerHTML = valuesRow[columnIndex];
-								break;
-							}
-						}
+						var headCellsIndex = myHeadCells.indexOf(element);
+						tr.cells[headerCellIndex].innerHTML = valuesRow[columnIndex];
 					}
 				}
 			}
