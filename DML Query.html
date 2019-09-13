@@ -421,7 +421,7 @@ matches; /* gives exactly what i want, but abuses `replace`,
 
 					var tblBody = tableElement.getElementsByTagName("tbody")[0];
 					tblBody.appendChild(tr);
-					
+			
 					for 
 					(
 						var columnIndex = 0, columnLength = columnsHeaders.length;
@@ -429,8 +429,25 @@ matches; /* gives exactly what i want, but abuses `replace`,
 						++columnIndex
 					)
 					{
-						var headCellsIndex = myHeadCells.indexOf(element);
-						tr.cells[headerCellIndex].innerHTML = valuesRow[columnIndex];
+						for
+						(
+							var headerCellIndex = 0, 
+								headerCellCount = myHeadCells.length;
+								headerCellIndex < headerCellCount;
+								++headerCellIndex
+						)
+						{
+							var myHeadCell = myHeadCells[headerCellIndex];
+							if 
+							(
+								myHeadCell.textContent === 
+								columnsHeaders[columnIndex]
+							)
+							{
+								tr.cells[headerCellIndex].innerHTML = valuesRow[columnIndex];
+								break;
+							}
+						}
 					}
 				}
 			}
