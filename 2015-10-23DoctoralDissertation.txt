@@ -3138,7 +3138,11 @@ Biblical generation - 40 Biblical years
 2.  [2024-11-13T21:17:00 Formal equivalence (word-for-word) versus (VS)
     Functional dynamic equivalence (thought-for-thought):
     [BibleWord.html](http://e-comfort.ephraimtech.com/WordEngineering/WordUnion/BibleWord.html)
-    is the former.]{#TextualBasis}
+    is the former.]{#FormalEquivalence_FunctionalDynamicEquivalence}
+3.  [2024-11-15T14:06:00 Translator: [The author\'s first program is
+    translation of English to
+    Yoruba.](http://e-comfort.ephraimtech.com/WordEngineering/WordUnion/GetAPage.html?word=The%20author's%20first%20program%20is%20translation%20of%20English%20to%20Yoruba.){datetime="2024-11-15T14:06:00"
+    hiswordid="164470" filename="Kowe.c"}]{#Translator}
 
 (Tim Wildsmith, 2024).
 
