@@ -79,6 +79,25 @@ Australia.
 
 ## Theory {#Theory}
 
+  Part                                                                    Example          Commentary
+  ----------------------------------------------------------------------- ---------------- -------------------------------------------------------------
+  Sub-domain                                                              www              A sub-domain defaults to www.
+  Domain                                                                  JesusInTheLamb   
+  Country code top-level domain (ccTLD)                                   .com             An abbreviation for commercial. A default domain extension.
+  Directory and filename                                                  index.html       
+  Fragment                                                                                 
+  It is not an e-mail address, since it does not include an at sign, @.                    
+  It defaults to port 80.                                                                  
+  It defaults to the homepage.                                                             
+
+  : www.JesusInTheLamb.com {#www.JesusInTheLamb.com}
+
+The issuing of this domain name may be related to commencing writing the
+book titled Ocean Senior. There has not been a follow-up on future
+artifacts. But when one reads the Bible, the book of Revelation, which
+starts with the letters to the 7 churches in Asia Minor, does not
+instigate future alteration.
+
 ### The Bible Database {#BibleDatabase}
 
 #### The Scripture Table {#ScriptureTable}
@@ -470,6 +489,15 @@ First, inside and last dates.
 This is subjective work; the author applys intelligence to find patterns
 and resemblances in the Bible.
 
+### Relational Database Hierarchy {#RelationalDatabaseHierarchy datetime="2024-11-05T08:11:00"}
+
+1.  Catalog: Is a collection of databases, for example, Bible,
+    WordEngineering, URI.
+2.  Schema: Is a collection of objects, which may include tables, views,
+    indexes, stored procedures, triggers.
+3.  Table: Is 2-dimensional with horizontal rows and vertical columns.
+4.  Column: It is a physical actualized attribute.
+
 "[]{cite="#bibliographyAllenGTaylor2024"}"
 
   Determinant                                                                  Functionally Dependent                    Implementation
@@ -480,6 +508,9 @@ and resemblances in the Bible.
 
   : Functional Dependencies {#FunctionalDependencies}
 
+<<<<<<< HEAD
+(Allen G. Taylor, 2024). "[]{cite="#bibliographyAllenGTaylor2024"}"
+=======
 ### Index Query Type {#IndexQueryType datetime="2024-11-15T15:53:00"}
 
 -   [Point query: Returns only 1 record, and it includes an equality
@@ -490,34 +521,34 @@ and resemblances in the Bible.
     index.]{#MultipointQuery}
 
 ### Relational Database Hierarchy {#RelationalDatabaseHierarchy datetime="2024-11-05T08:11:00"}
+>>>>>>> ca91f37cabf3e9e1fc060760db0467da86a29ada
 
-1.  Catalog: Is a collection of databases, for example, Bible,
-    WordEngineering, URI.
-2.  Schema: Is a collection of objects, which may include tables, views,
-    indexes, stored procedures, triggers.
-3.  Table: Is 2-dimensional with horizontal rows and vertical columns.
-4.  Column: It is a physical actualized attribute.
+### Index Query Type {#IndexQueryType datetime="2024-11-15T15:53:00"}
+
++-----------------------+-----------------------+-----------------------+
+| Query Type            | Commentary            | Structured Query      |
+|                       |                       | Language (SQL)        |
++=======================+=======================+=======================+
+| Point query           | It will return only 1 | ``` {20               |
+|                       | record, and it is     | 24-11-18t15:51:00=""} |
+|                       | restricted by an      | SELECT *              |
+|                       | equality condition on | FROM                  |
+|                       | the primary key or    | Bible..Scripture_View |
+|                       | unique index.         | WHER                  |
+|                       |                       | E VerseIDSequence = 1 |
+|                       |                       | ```                   |
++-----------------------+-----------------------+-----------------------+
+| Multipoint query      | It may return more    | ``` {20               |
+|                       | than 1 record, as     | 24-11-18t15:51:00=""} |
+|                       | there may be multiple | SELECT *              |
+|                       | records. It is        | FROM                  |
+|                       | restricted by an      | Bible..Scripture_View |
+|                       | equality condition on | WHERE                 |
+|                       | part of a potential   | ChapterIDSequence = 1 |
+|                       | composite key.        | ```                   |
++-----------------------+-----------------------+-----------------------+
 
 (Allen G. Taylor, 2024).
-
-  Part                                                                    Example          Commentary
-  ----------------------------------------------------------------------- ---------------- -------------------------------------------------------------
-  Sub-domain                                                              www              A sub-domain defaults to www.
-  Domain                                                                  JesusInTheLamb   
-  Country code top-level domain (ccTLD)                                   .com             An abbreviation for commercial. A default domain extension.
-  Directory and filename                                                  index.html       
-  Fragment                                                                                 
-  It is not an e-mail address, since it does not include an at sign, @.                    
-  It defaults to port 80.                                                                  
-  It defaults to the homepage.                                                             
-
-  : www.JesusInTheLamb.com {#www.JesusInTheLamb.com}
-
-The issuing of this domain name may be related to commencing writing the
-book titled Ocean Senior. There has not been a follow-up on future
-artifacts. But when one reads the Bible, the book of Revelation, which
-starts with the letters to the 7 churches in Asia Minor, does not
-instigate future alteration.
 
 "[]{cite="#bibliographyHumbertoCervantes_RickKazman20240602"}"
 
