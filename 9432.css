@@ -1,8 +1,33 @@
+/*
+	2021-08-13T00:00:00	https://www.oreilly.com/pub/missingmanuals/csstmm4e
+	2021-08-15T19:17:00 Control-F5 Mozilla Firefox refresh css only
+	w3schools.com/css/css_display_visibility.asp
+		KnowledgeBase table
+		2010-08-08 Hiding an Element - display:none or visibility:hidden
+
+Hiding an element can be done by setting the display property to "none" or the visibility property to "hidden". However, notice that these two methods produce different results:
+
+visibility:hidden hides an element, but it will still take up the same space as before. The element will be hidden, but still affect the layout.
+h1.hidden {visibility:hidden;}
+
+display:none hides an element, and it will not take up any space. The element will be hidden, and the page will be displayed as the element is not there:
+h1.hidden {display:none;}
+*/
+/*
+	html, body{
+	  height: 100%;
+	  width: 100%;
+	}
+	textarea{ //viewport
+		height: 65vh;
+		width: 90vw;
+	}
+*/
 body {
-	/* background-color: #FF9500; */
-	border: 5px solid black;
-	margin: 0 auto;
-	padding: 0 20px 20px 20px;  
+	/*background-color: #FF9500; */
+	border: 5px solid black; /* The line that is drawn around each edge of the box. */
+	margin: 0 auto; /* Is what separates one tag from another. */
+	padding: 0 20px 20px 20px; /* Is the space between the content and the content's border. */ 
 	/* width: 600px; */
 }
 
@@ -14,12 +39,21 @@ body {
 }
 
 /* div inside a div, border. */
+/*
 div > div {
 	border: 1px solid #ccc;
 } 
+*/
+/*
+	2020-03-23	https://webdesign.tutsplus.com/articles/new-css-is-for-easy-element-targeting--cms-34223
+*/
+:is(div) :is(div) {
+    border: 1px solid #ccc;
+}
 
 html {
 	background-color: #00539F;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 table {
@@ -45,4 +79,12 @@ tr:nth-child(even) {
 
 #resultSetSQLStatement {background:black; color:lightblue;}
 
-/* Responsive design base font size */
+/* 2023-06-13 http://www.buildingwebsitesfordummies.net */
+a { color: #cc0000; }
+a:link { color: #000000; }
+a:visited { color: #009900; }
+a:hover { color: #000000; background-color: #ccc }
+a:active { color: #990000; }
+
+/* 2023-06-13 http://www.buildingwebsitesfordummies.net */
+#liDisplayInline {display:inline;}
