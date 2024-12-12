@@ -6,4 +6,4 @@
 <a href="IsItDuplicates.html">IsItDuplicates.html</a><br>
 <a href="DML Query.html">DML Query</a><br>
 <a href="ui-patterns.com_-_PasswordStrengthMeter.html">ui-patterns.com_-_PasswordStrengthMeter.html</a><br>
-<a href="HaishiBai_-_ByHowMuchDoesRedundancyImproveAvailability.html">Haishi Bai: HowMuchDoesRedundancyImproveAvailability.html</a><br>
+<a href="HaishiBai_-_ByHowMuchDoesRedundancyImproveAvailability.html">Haishi Bai: How much does redundancy improve availability?</a><br>
