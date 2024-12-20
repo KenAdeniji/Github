@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<!--
+		2024-12-19T07:31:00	Created. 2024.stateofjs.com
+		2024-12-19T20:14:00	dynamic code
+			Operation: code
+			data
+			url	
+		2024-12-19T20:14:00	How do you build a function?
+		2024-12-19T20:40:00	Variable code?
+	-->	
+	<head>
+		<title>2024.stateofjs.com</title>
+		<meta charset="UTF-8"/>
+		<meta name="description" content="2024.stateofjs.com"/>
+		<meta name="keyword" content="2024.stateofjs.com, JavaScript"/>
+		<meta name="robots" content="index, follow"/>
+		<meta name="author" content="Ken Adeniji"/>
+		<style>
+			html {
+				background-color: #00539F;
+				font-family: Arial, Helvetica, sans-serif;
+			}
+			html, body{
+			  height: 100%;
+			  width: 100%;
+			}
+table {
+   border: 1px solid black;
+   border-spacing: 5px;
+   border-collapse: separate;
+   /* width:100%; */ 
+}
+
+th, td { 
+	padding:5px 10px; border:#4e95f4 1px solid;
+}
+
+/*  Define the background color for all the ODD background rows  */
+tr:nth-child(odd) { 
+	background: #b8d1f3;
+}
+
+/*  Define the background color for all the EVEN background rows  */
+tr:nth-child(even) {
+	background: #dae5f4;
+}
+		</style>
+	</head>
+	<body>
+
+		<div id="resultSet" align="center"></div>
+
+		<script src="2024.stateofjs.com.js"></script>
+
+		<script>
+			const resultSetElement = document.getElementById("resultSet");
+
+			let dataRow;
+			let codeResult;
+			let codeURL;
+			let	resultSetStub = 
+				`
+					<table border="1">
+						<thead>
+							<tr>
+								<th>Name</th>
+								<th>Example</th>
+								<th>Value</th>
+								<th>Commentary</th>
+								<th>URI</th>								
+							</tr>
+						</thead>
+						<tbody>
+				`;
+				
+			function pageLoad()
+			{
+				for (var rowIndex = 0, rowCount = dataJSON.length; rowIndex < rowCount; ++rowIndex)
+				{
+					dataRow = dataJSON[rowIndex];
+					codeResult = eval(dataRow["valued"]);
+					codeURL = dataRow.hasOwnProperty("url") ?
+						`<a href=${dataRow["url"]} target="_blank">${dataRow["url"]}</a>` :
+						"";
+					resultSetStub +=
+						`
+							<tr>
+								<td>${dataRow["named"]}</td>
+								<td>${dataRow["valued"]}</td>
+								<td>${codeResult}</td>
+								<td>${dataRow["commentary"]}</td>
+								<td>${codeURL}</td>
+							</tr>	
+						`;
+				}
+				resultSetStub += "<tbody></table>";
+				resultSetElement.innerHTML = resultSetStub;
+			}
+			
+			window.addEventListener("load", pageLoad, false);
+
+			const dataJSON =
+[
+	{
+		named: "Nullish Coalescing",
+		valued: "1 ?? 2",
+		commentary: "Return first value, or second value if first value is null or undefined."
+	},
+	{
+		named: "Logical Assignment",
+		valued: "willTargetTuesdayDecemberThirtyFirst = null; willTargetTuesdayDecemberThirtyFirst ||= new Date(2024, 11, 31);",
+		commentary: "Operators to assign a value to a variable based on its own truthy/falsy status."
+	},
+	{
+		named: "replaceAll",
+		valued: "'foo_bar_baz'.replaceAll('_', '-')",
+		commentary: "Replace all instance of a string.",
+		url: "http://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replaceAll"
+	},
+];			
+		</script>
+	</body>
+</html>
