@@ -24,5 +24,18 @@ var module20241219 =	//2024-12-19T09:30:00
 	{
 		willTargetTuesdayDecemberThirtyFirst ||= new Date(2024, 11, 31);
 		return willTargetTuesdayDecemberThirtyFirst;
-	}	
+	},
+	
+	//2024-12-19T16:48:00 	replace all instance of a string http://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replaceAll
+	//2024-12-19T17:03:00	How will I replicate whom?
+	replaceAllInstancesOfAString: function
+	(
+		original,
+		pattern,
+		replacement
+	)
+	{
+		return original.replaceAll(pattern, replacement);
+	},
+	
 }	

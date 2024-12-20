@@ -62,6 +62,7 @@ tr:nth-child(even) {
 								<th>Usage</th>
 								<th>Value</th>
 								<th>Commentary</th>
+								<th>URI</th>								
 							</tr>
 						</thead>
 						<tbody>
@@ -92,6 +93,31 @@ tr:nth-child(even) {
 								<td>module20241219.logicalAssignment(null)</td>								
 								<td>${module20241219.logicalAssignment(null)}</td>
 								<td>Operators to assign a value to a variable based on its own truthy/falsy status.</th>
+							</tr>
+							<tr id="replaceAll">
+								<td>Replace All</td>
+								<td>
+	replaceAllInstancesOfAString: function
+	(
+		original,
+		pattern,
+		replacement
+	)
+	{
+		return original.replaceAll(pattern, replacement);
+	}
+								</td>
+								<td>module20241219.replaceAllInstancesOfAString("foo_bar_baz", "_", "-")</td>
+								<td>${module20241219.replaceAllInstancesOfAString("foo_bar_baz", "_", "-")}</td>
+								<td>Replace all instance of a string.</th>
+								<td>
+									<a 
+										href="http://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replaceAll"
+										target="_blank"
+									>	
+										developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replaceAll
+									</a>
+								</th>
 							</tr>
 						</tbody>
 					</table>	
