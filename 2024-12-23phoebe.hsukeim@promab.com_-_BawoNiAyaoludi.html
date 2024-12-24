@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html>
+	<!--
+		2024-12-24T00:22:00 Created.
+		2024-12-24T01:21:00	https://kenadeniji.github.io/Github/2015-10-23DoctoralDissertation.txt
+		2024-12-24T02:09:00	Split document... import into database. Generate insert statement.
+		2024-12-24T02:20:00	http://stackoverflow.com/questions/21895233/how-to-split-string-with-newline-n-in-node
+		2024-12-24T03:17:00	http://stackoverflow.com/questions/55007063/async-and-await-following-fetch-request
+	-->
+	<head>
+		<title>Bawo ni ayaoludi?</title>
+		<meta charset="UTF-8"/>
+		<meta name="description" content="Bawo ni ayaoludi?"/>
+		<meta name="keywords" content="Text, SQL insert"/>
+		<meta name="robots" content="index, follow"/>
+		<meta name="author" content="Ken Adeniji"/>
+		<style>		
+			html, body
+			{
+				height: 100%;
+				width: 100%;
+			}
+			textarea
+			{
+				height: 45vh;
+				width: 90vw;
+			}
+			html 
+			{
+				background-color: #00539F;
+			}
+		</style>
+	</head>
+	<body>
+		<form method="post" id="formed" action="javascript:void(0);">
+			<div align="center">
+				<label for="webServiceURL" align="left">Web service URL: </label>
+				<input 
+					type="url"
+					id="webServiceURL"
+					size="50"
+					align="left"
+					value="https://kenadeniji.github.io/Github/2015-10-23DoctoralDissertation.txt"
+				/>
+				<br>
+				<input type="submit" id="submitQuery">
+				<br>
+				<textarea id="outputSet"></textarea><br>
+				<textarea id="outputSQL"></textarea>
+			</div>
+		</form>
+		<script>
+			const formedElement = document.getElementById("formed");
+
+			const webServiceURLElement = document.getElementById("webServiceURL");
+		
+			const inputSetElement = document.getElementById("inputSet");
+			const submitQueryElement = document.getElementById("submitQuery");
+			const outputSetElement = document.getElementById("outputSet");
+			const outputSQLElement = document.getElementById("outputSQL");
+			
+			var isPostBack = false;
+
+			function pageLoad()
+			{
+				if (isPostBack === false)
+				{
+					var urlParams = new URLSearchParams(window.location.search);
+					
+					var webServiceURLValue = urlParams.get("webServiceURL");
+					if (webServiceURLValue)
+					{
+						webServiceURLElement.value = webServiceURLValue;
+					}	
+
+					querySubmit();
+					isPostBack = true;
+				}
+				else
+				{
+					querySubmit();
+				}
+			}
+
+			async function fetchQuery()
+			{
+				try 
+				{
+					let response = await fetch(webServiceURLElement.value); // Gets a promise
+					textInfo = await response.text();
+					outputSetElement.value = textInfo;
+					return textInfo;
+				} 
+				catch (err) 
+				{
+					outputSetElement.value = err;
+					console.log(err); // Error handling
+				}
+			}
+
+			async function querySubmit()
+			{
+				let textInfo = await fetchQuery();
+				generateSQL(textInfo);
+			}
+
+			async function generateSQL(fetchInfo)
+			{
+				let textLines = splitLines(fetchInfo);
+				let dmlStatements = "";
+				let element = "";
+				for (const element of textLines) 
+				{
+					dmlStatements += `INSERT INTO SampleTable VALUES('${element}')\n`;
+				}
+				outputSQLElement.value = dmlStatements;
+			}
+
+			function splitLines(t) { return t.split(/\r\n|\r|\n/); }
+
+			submitQueryElement.addEventListener("click", querySubmit, false);
+			
+			var body = document.getElementsByTagName('body')[0];
+			body.onkeydown = function (e) {
+				if (e.keyCode === 13) {  //enter key code
+					querySubmit();
+				}
+			}
+
+			window.addEventListener("load", pageLoad, false);
+			
+			outputSetElement.addEventListener("change", generateSQL);
+	</script>
+</body>
+</html>
