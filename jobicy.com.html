@@ -102,7 +102,7 @@ url	https://jobicy.com/jobs/111788-product-marketing-manager-2
 					</tr>
 					<tr><td colspan="2" align="center"><input type="submit" id="submitQuery"></td></tr>
 				</table>
-				<div id="resultSet" align="center"></div>
+				<div id="resultSet" align="left"></div>
 			</div>
 		</form>
 
@@ -210,44 +210,39 @@ url	https://jobicy.com/jobs/111788-product-marketing-manager-2
 			{
 				let jsonInfo = await fetchQuery();
 				
-				let tableInfo =
-					`<table id='tableJobs'><caption>Jobs</caption>
-						<tbody>
-					`
+				let outputInfo = "<ol>";
 				
 				for (var job of jsonInfo.jobs) 
 				{
-					tableInfo += 
-						`<tr><td><table><tbody>
-							<tr><td>id</td><td>${job.id}</td></tr>
-							<tr><td>url</td><td><a href="${job.url}" target="_blank">${job.url}</a></td></tr>
-							<tr><td>jobTitle</td><td>${job.jobTitle}</td></tr>
-							<tr><td>companyName</td><td>${job.companyName}</td></tr>
-							<tr>
-								<td>companyLogo</td>
-								<td>
+					outputInfo += 
+						`<li><ul>
+							<li>id: ${job.id}</li>
+							<li>url: <a href="${job.url}" target="_blank">${job.url}</a></li>
+							<li>jobTitle: ${job.jobTitle}</li>
+							<li>companyName: ${job.companyName}</li>
+							<li>
+								companyLogo:
 									<a href="${job.companyLogo}" target="_blank">${job.companyLogo}</a><br>
 									<img src="${job.companyLogo}" alt="${job.companyLogo}"/>
-								</td>
-							</tr>
-							<tr><td>jobIndustry</td><td>${job.jobIndustry}</td></tr>
-							<tr><td>jobType</td><td>${job.jobType}</td></tr>
-							<tr><td>jobGeo</td><td>${job.jobGeo}</td></tr>
-							<tr><td>jobLevel</td><td>${job.jobLevel}</td></tr>
-							<tr><td>jobExcerpt</td><td>${job.jobExcerpt}</td></tr>
-							<tr><td>jobDescription</td><td>${job.jobDescription}</td></tr>
-							<tr><td>pubDate (UTC+00:00)</td><td>${job.pubDate}</td></tr>
-							<tr><td>annualSalaryMin</td><td>${job.annualSalaryMin}</td></tr>
-							<tr><td>annualSalaryMax</td><td>${job.annualSalaryMax}</td></tr>
-							<tr><td>salaryCurrency (ISO 4217 salary currency code)</td><td>${job.salaryCurrency}</td></tr>
-						</tbody></table></td></tr>
+							</li>
+							<li>jobIndustry: ${job.jobIndustry}</li>
+							<li>jobType: ${job.jobType}</li>
+							<li>jobGeo: ${job.jobGeo}</li>
+							<li>jobLevel: ${job.jobLevel}</li>
+							<li>jobExcerpt: ${job.jobExcerpt}</li>
+							<li>jobDescription: ${job.jobDescription}</li>
+							<li>pubDate (UTC+00:00): ${job.pubDate}</li>
+							<li>annualSalaryMin: ${job.annualSalaryMin}</li>
+							<li>annualSalaryMax: ${job.annualSalaryMax}</li>
+							<li>salaryCurrency (ISO 4217 salary currency code): ${job.salaryCurrency}</li>
+						</ul></li>
 						`
 						;
 				}
 				
-				tableInfo += "</tbody></table>";
+				outputInfo += "</ol>";
 				
-				resultSetElement.innerHTML = tableInfo;
+				resultSetElement.innerHTML = outputInfo;
 			}
 
 			submitQueryElement.addEventListener("click", querySubmit, false);
