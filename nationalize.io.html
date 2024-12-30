@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<!--
+		2024-12-29T23:24:00	Created.	freepublicapis.com/nationalize-api
+		2024-12-29T23:24:00	nationalize.io
+	-->	
+	<head>
+		<title>nationalize.io</title>
+		<meta charset="UTF-8"/>
+		<meta name="description" content="nationalize.io"/>
+		<meta name="keyword" content="nationality of a single name"/>
+		<meta name="robots" content="index, follow"/>
+		<meta name="author" content="Ken Adeniji"/>
+	</head>
+	<body>
+		<script>
+			document.head.insertAdjacentHTML
+			(
+				"beforeend",
+				`<link type="text/css" rel="stylesheet" media="screen" href="/WordEngineering/WordUnion/9432.css">`
+			);
+		</script>
+
+		<form method="post" id="formed" action="javascript:void(0);">
+			<div align="center">
+				<label for="name" align="left">Name: </label>
+				<input align="center" id="name" type="text" value="Adeniji" size="50" autofocus required/>
+				<br>
+				<input type="submit" id="submitQuery">
+				<br>
+				<div id="resultSet" align="center"></div>
+			</div>
+		</form>
+
+		<script>
+			const	nameElement = document.getElementById("name");
+			const	formedElement = document.getElementById("formed");
+			const	resultSetElement = document.getElementById("resultSet");
+			const	submitQueryElement = document.getElementById("submitQuery");
+						
+			function pageLoad()
+			{
+				querySubmit();
+ 			}
+
+			async function fetchQuery()
+			{
+				try 
+				{
+					url = `https://api.nationalize.io?name=${nameElement.value}`;
+					let response = await fetch(url); // Gets a promise
+					let textInfo = await response.json();
+					let jsonInfo = JSON.stringify(textInfo);
+					resultSetElement.innerHTML = jsonInfo;
+					return jsonInfo;
+				} 
+				catch (err) 
+				{
+					resultSetElement.value = err;
+					console.log(err); // Error handling
+				}
+			}
+
+			async function querySubmit()
+			{
+				let textInfo = await fetchQuery();
+			}
+
+			submitQueryElement.addEventListener("click", querySubmit, false);
+			
+			var body = document.getElementsByTagName('body')[0];
+			body.onkeydown = function (e) {
+				if (e.keyCode === 13) {  //enter key code
+					querySubmit();
+				}
+			}
+
+			window.addEventListener("load", pageLoad, false);
+		</script>		
+	</body>
+</html>
