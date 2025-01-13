@@ -3291,7 +3291,9 @@ commentary="When I am doing this? What do I become?" location="Shower"}
 
 ### 2025-01-11T18:41:00 Database optimization {#DatabaseOptimization}
 
-1.  2025-01-11T18:41:00 [Join Estimation Internals in SQL Server April
+1.  2025-01-11T17:23:22
+    [queryprocessor.com](http://queryprocessor.com){datetime="2025-01-13T11:40:00"}
+    2025-01-11T18:41:00 [Join Estimation Internals in SQL Server April
     24, 2018 by Dmitry
     Piliugin](http://www.sqlshack.com/join-estimation-internals){datetime="2025-01-11T18:41:00"
     contactid="15661"} : [It was built with transport model\... in
@@ -3309,7 +3311,15 @@ commentary="When I am doing this? What do I become?" location="Shower"}
     functions.](http://e-comfort.ephraimtech.com/WordEngineering/WordUnion/GetAPage.html?word=When%20searching%20by%20Bible%20groups...%20these%20are%20scalar%20functions.){datetime="2025-01-13T09:46:00"
     hiswordid="165034"
     url="sqlshack.com/scalar-udf-estimation-and-project-normalization"
-    contactid="15661"}
+    contactid="15661"} 2025-01-13T11:40:00 [Do we have to be part of
+    this](http://e-comfort.ephraimtech.com/WordEngineering/WordUnion/GetAPage.html?word=Do%20we%20have%20to%20be%20part%20of%20this%3F){datetime="2025-01-13T11:40:00"
+    hiswordid="165035" url="queryprocessor.com" contactid="15661"
+    location="At the intersection of Fremont Boulevard and Paseo Padre Parkway, north-west. Caucasian male wearing red and black and riding a bicycle riding from north-west to south-west."}
+    ( [Acts 7:25, Genesis
+    37:20](http://e-comfort.ephraimtech.com/WordEngineering/WordUnion/ScriptureReference.html?scriptureReference=Acts%207:25,%20Genesis%2037:20){datetime="2025-01-13T11:40:00"
+    hiswordid="165035" url="queryprocessor.com" contactid="15661"
+    location="At the intersection of Fremont Boulevard and Paseo Padre Parkway, north-west. Caucasian male wearing red and black and riding a bicycle riding from north-west to south-west."}
+    )?
 
 (Dmitry Pilugin).
 
