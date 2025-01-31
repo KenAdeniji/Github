@@ -3367,6 +3367,13 @@ commentary="When I am doing this? What do I become?" location="Shower"}
     hiswordid="165050" contactid="15669"
     location="Milk & Honey Cafe. Pegasus Center. 34265 Fremont Boulevard. Fremont, California (CA) 94555."}
 
+### 2025-01-31T08:51:00 What title\... we are befriending? {#WhatTitleWeAreBefriending datetime="2025-01-31T08:51:00" hiswordid="165195" location="Shower"}
+
+1.  The url of the author is www.JesusInTheLamb.com
+2.  The first independent self-inspired software written by the author
+    is Kowe.c for the Yoruba language.
+3.  The AlphabetSequence algorithm is what he is known for.
+
 "[]{cite="#DmitryPilugin"}"
 
 ### 2025-01-11T18:41:00 Database optimization {#DatabaseOptimization}
