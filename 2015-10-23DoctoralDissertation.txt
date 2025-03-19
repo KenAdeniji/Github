@@ -407,7 +407,11 @@ rare. When redundancies do occur, we may append the sequence to the
 word, to generate a unique word. We do this manually, but an [insert
 trigger](http://www.tutorialspoint.com/plsql/plsql_triggers.htm), will
 offer automation, and will cut the risk of primary key violation, which
-leads to gaps in the identity column.
+leads to gaps in the identity column [and, loss of
+data.](http://e-comfort.ephraimtech.com/WordEngineering/WordUnion/GetAPage.html?word=and,%20loss%20of%20data.){datetime="2025-03-18T18:08:00"
+hiswordid="165614" contactid="15889"
+url="npr.org/2025/03/18/g-s1-54493/judge-boasberg-trump-deportation-flights?utm_source=firefox-newtab-en-us"
+commentary="2025-03-18T18:08:00 urine."}
 
 The HisWord\'s table, commentary column, contains implicit information.
 This communication is most likely non-verbal, and it is information such
