@@ -4676,7 +4676,7 @@ JAL JAPAN AIRLINES 1999-01-17 SYDNEY TOKYO 1999-01-17T10-30 1999-01-17T18:05 JL 
 					</tr>
 					<tr>
 						<td>Davidic covenant</td>
-						<td/>
+						<td></td>
 						<td><a href="http://e-comfort.ephraimtech.com/WordEngineering/WordUnion/ScriptureReference.html?scriptureReference=Psalms%2089:3,%20Isaiah%2055:3,%20Jeremiah%2033:21">Psalms 89:3, Isaiah 55:3, Jeremiah 33:21</a></td>
 					</tr>
 				</tbody>
@@ -5118,7 +5118,7 @@ JAL JAPAN AIRLINES 1999-01-17 SYDNEY TOKYO 1999-01-17T10-30 1999-01-17T18:05 JL 
 				)?
 			</p>
 
-			<p data-Dated="2021-04-18T10:43:00">
+			<div data-Dated="2021-04-18T10:43:00">
 				The author is working on variations of AlphabetSequence:
 				These are not suitable for general use.
 				These are man's exposition of God's word.
@@ -5141,7 +5141,7 @@ JAL JAPAN AIRLINES 1999-01-17 SYDNEY TOKYO 1999-01-17T10-30 1999-01-17T18:05 JL 
 						The first word is the BookID; the second word is the ChapterID; and the third word is the VerseID.
 					</li>
 				</ul>
-			</p>
+			</div>
 
 			<p
 				data-Dated="2023-08-06T23:16:00"
@@ -5152,15 +5152,15 @@ JAL JAPAN AIRLINES 1999-01-17 SYDNEY TOKYO 1999-01-17T10-30 1999-01-17T18:05 JL 
 				Biblical separation into Testaments, books, chapters and verses for referencing.			
 			</p>
 
-			<p data-Dated="2024-01-05T15:54:00">
+			<div data-Dated="2024-01-05T15:54:00">
 				Biblical generation - 40 Biblical years
 				<ul>
 					<li>2007...2008 Common Era - the author is 40 years old: the author mentions time.</li>
 					<li>2021...2024 Common Era - the biological mother of the author is 80 years old: the word recorded by the author is time relevance specific.</li>
 				</ul>
-			</p>
+			</div>
 			
-			<p data-Dated="2024-11-20T09:27:00">
+			<div data-Dated="2024-11-20T09:27:00">
 				<a 
 					href="http://e-comfort.ephraimtech.com/WordEngineering/WordUnion/GetAPage.html?word=When%20I%20am%20doing%20this%3F"
 					data-Dated="2024-11-20T09:27:00"
@@ -5201,7 +5201,7 @@ JAL JAPAN AIRLINES 1999-01-17 SYDNEY TOKYO 1999-01-17T10-30 1999-01-17T18:05 JL 
 						)
 					</li>
 				</ul>
-			</p>
+			</div>
 
 			<blockquote cite="#bibliographyTimWildsmith2024" data-Dated="2024-11-13T19:12:00">
 
@@ -5533,11 +5533,11 @@ JAL JAPAN AIRLINES 1999-01-17 SYDNEY TOKYO 1999-01-17T10-30 1999-01-17T18:05 JL 
 					2025-01-23 11:23:11.163 Compare the identity column and date column order, and highlight when the date column is out of sequence?
 <pre data-Dated="2025-01-25T10:26:00">
 SELECT * FROM WordEngineering..HisWord HisWordLead
-WHERE Dated >
+WHERE Dated &gt;
 (
 	SELECT TOP 1 Dated
 	FROM WordEngineering..HisWord HisWordLag
-	WHERE HisWordLead.HisWordID < HisWordLag.HisWordID
+	WHERE HisWordLead.HisWordID &lt; HisWordLag.HisWordID
 	ORDER BY HisWordLead.HisWordID 
 )
 ORDER BY HisWordID DESC
