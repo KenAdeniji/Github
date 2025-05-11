@@ -65,6 +65,23 @@
 				text-indent: 25px;
 				/* font-family: Times, "Times New Roman", serif; */ /* 2021-09-17T11:03:00 http://www.SawMac.com/css */
 			}
+			
+			/*
+				2024-08-21T14:34:00 http://developer.mozilla.org/en-US/docs/Web/CSS/@counter-style/prefix
+			*/
+			@counter-style designingSoftwareArchitecturesAPracticalApproach_MakingDesignDecisions
+			{
+			  system: numeric;
+			  symbols: "0" "1" "2" "3" "4" "5" "6" "7" "8" "9";
+			  prefix: "Principle ";
+			  suffix: ": ";
+			}
+
+			.designingSoftwareArchitecturesAPracticalApproach_MakingDesignDecisions
+			{
+			  list-style: designingSoftwareArchitecturesAPracticalApproach_MakingDesignDecisions;
+			  padding-left: 10ch;
+			}
 		</style>
 	<!--
 		2015-10-23	Created.
@@ -1126,31 +1143,13 @@ ORDER BY BookGroup
 						<td>Equi-join query</td>
 						<td>The records are retrieved from multiple sources.</td>
 						<td>The author uses views for table joins.</td>
-						<td/>
+						<td></td>
 					</tr>
 				</tbody>
 			</table>
 			
 			</blockquote> (Allen G. Taylor, 2024).
 
-<style>
-/*
-	2024-08-21T14:34:00 http://developer.mozilla.org/en-US/docs/Web/CSS/@counter-style/prefix
-*/
-@counter-style designingSoftwareArchitecturesAPracticalApproach_MakingDesignDecisions
-{
-  system: numeric;
-  symbols: "0" "1" "2" "3" "4" "5" "6" "7" "8" "9";
-  prefix: "Principle ";
-  suffix: ": ";
-}
-
-.designingSoftwareArchitecturesAPracticalApproach_MakingDesignDecisions
-{
-  list-style: designingSoftwareArchitecturesAPracticalApproach_MakingDesignDecisions;
-  padding-left: 10ch;
-}
-</style>
 			<blockquote 
 				cite="#bibliographyHumbertoCervantes_RickKazman20240602"
 				data-Dated="2024-08-21T14:34:00"
