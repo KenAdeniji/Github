@@ -1040,7 +1040,7 @@
 						<td>It may return more than 1 record, as there may be multiple records. It is restricted by an equality condition on part of a potential composite key.</td>
 						<td>Useful for searching for a particular chapter or book.</td>
 						<td>
-	<pre 2024-11-18T15:51:00>
+	<pre data-Dated="2024-11-18T15:51:00">
 	SELECT *
 	FROM Bible..Scripture_View
 	WHERE ChapterIDSequence = 1
@@ -1052,7 +1052,7 @@
 						<td>It returns a set of records whose values are within an interval or half interval. If it is restricted by both lower and upper bounds, then there is an interval. It is a half interval, if it specifies only one bound.</td>
 						<td>Useful for searching for consecutive verses, chapters or books.</td>
 						<td>
-	<pre 2024-11-19T23:47:00>
+	<pre data-Dated="2024-11-19T23:47:00">
 	SELECT *
 	FROM Bible..Scripture_View
 	WHERE VerseIDSequence BETWEEN 1 AND 10
@@ -1068,7 +1068,7 @@
 						<td>The set is the match of an attribute.</td>
 						<td>The author is unfamiliar with any use-case where only the first part of the wildcard is searched. The first part of the scripture reference is similar. For the BibleWord searches, the author uses like for match queries.</td>
 						<td>
-	<pre 2024-11-21T03:52:00>
+	<pre data-Dated="2024-11-21T03:52:00">
 SELECT *
 FROM Bible..Scripture_View
 WHERE KingJamesVersion LIKE
@@ -1086,7 +1086,7 @@ WHERE KingJamesVersion LIKE
 						<td>It returns either the minimum or maximum extreme.</td>
 						<td>Statistics</td>
 						<td>
-	<pre 2024-11-21T17:46:00>
+	<pre data-Dated="2024-11-21T17:46:00">
 SELECT *
 FROM Bible..Scripture_View
 WHERE VerseIDSequence =
@@ -1102,7 +1102,7 @@ WHERE VerseIDSequence =
 						<td>The records returned are sorted.</td>
 						<td>The results of the author are normally in ascending order.</td>
 						<td>
-	<pre 2024-11-21T18:02:00>
+	<pre data-Dated="2024-11-21T18:02:00">
 SELECT TOP 10 *
 FROM Bible..Scripture_View
 ORDER BY VerseIDSequence DESC
@@ -1114,7 +1114,7 @@ ORDER BY VerseIDSequence DESC
 						<td>The records returned are grouped.</td>
 						<td>Rarely does the author group rows by issuing the group by clause.</td>
 						<td>
-	<pre 2024-11-21T18:09:00>
+	<pre data-Dated="2024-11-21T18:09:00">
 SELECT BookGroup, COUNT(BookGroup ) BookGroupVersesCount
 FROM Bible..Scripture_View
 GROUP BY BookGroup
