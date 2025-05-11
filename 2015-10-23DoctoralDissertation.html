@@ -1677,7 +1677,7 @@ ORDER BY BookGroup
 				<li>Is the source of bad data input internal, on-line users, or error in programming?
 					<span data-Dated="2022-08-23T17:22:00">He doesn't envision error in reference data.</span>
 				</li>
-				<li>Does the vendor have data definition language (DDL) to pre-empt data corruption?</li>
+				<li>Does the vendor have data definition language (DDL) to pre-empt data corruption?
 					<ul>
 						<li>Data type and size: String, number, date, logic boolean?</li>
 						<li>Not nullable? Can not be empty?</li>
@@ -1686,6 +1686,7 @@ ORDER BY BookGroup
 						<li>Non-surrogate primary and foreign keys with unique indexes help to ascertain data.</li>
 						<li>Default columns are probable system generated that the users may leave unfilled that are available from sequence, identity, system clock.</li>
 					</ul>
+				</li>	
 				<li>Is the data incomplete, such as abbreviation, for example CA or California, telephone numbers without country or area code?</li>
 				<li>Is it data manipulation language (DML) deadlock, arrangement of data modification?
 					<span data-Dated="2022-08-23T17:15:00">Transaction commit or rollback? Cascade?</span>
