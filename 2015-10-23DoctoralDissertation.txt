@@ -28,12 +28,12 @@ of Science.
 ( [2 Corinthians
 10:9-18](http://e-comfort.ephraimtech.com/WordEngineering/WordUnion/ScriptureReference.html?scriptureReference=2%20Corinthians%2010:9-18){dated="2022-01-07T09:08:00"
 word="That create." hiswordid="144962" contactid="11433"} ). The
-AlphabetSequenceIndex is the [result of a pure function to sum alphabet
-places]{dated="2020-09-09T00:00:00"}
+[AlphabetSequenceIndex]{.dfn dated="2025-05-20T20:34:00"} is the [result
+of a pure function to sum alphabet places]{dated="2020-09-09T00:00:00"}
 [AlphabetSequence.cs](http://github.com/KenAdeniji/WordEngineering/blob/master/InformationInTransit/ProcessLogic/AlphabetSequence.cs)
-. [ The AlphabetSequenceIndexScriptureReference are the offsets from the
-beginning and the ending of the Scripture.
-]{dated="2020-09-14T00:00:00"} [ The
+. [ The [AlphabetSequenceIndexScriptureReference]{.dfn
+dated="2025-05-20T20:24:00"} are the offsets from the beginning and the
+ending of the Scripture. ]{dated="2020-09-14T00:00:00"} [ The
 AlphabetSequenceIndexScriptureReference consists of four parts; there
 are two references each to particular chapters and verses. The first
 mention is the forward verse, which the author calculates by determining
@@ -91,7 +91,7 @@ Australia.
   It defaults to port 80.                                                                  
   It defaults to the homepage.                                                             
 
-  : www.JesusInTheLamb.com {#www.JesusInTheLamb.com}
+  : 2004-11-10 www.JesusInTheLamb.com {#www.JesusInTheLamb.com}
 
 The issuing of this domain name may be related to commencing writing the
 book titled Ocean Senior. There has not been a follow-up on future
@@ -150,7 +150,10 @@ indexes are not applicable to like expressions with leading wildcards.
 
 ##### The Scripture View\'s Testament Column {#Scripture_ViewTestamentColumn}
 
-The SQL statement `(case when BookID <=(39) then 'Old' else 'New' end)`
+The SQL statement
+
+    (case when BookID <=(39) then 'Old' else 'New' end)
+
 will set this computed column. The Testament column serves as a filter,
 such as, in the
 [BibleWord](http://e-comfort.ephraimtech.com/WordEngineering/WordUnion/BibleWord.html).
@@ -182,7 +185,7 @@ the corresponding BookID. ]{dated="2020-10-06T15:05:00"}
 The SQL statement
 `dbo.udf_ScriptureReference(BookID, ChapterID, VerseID)` will calculate
 the conjecture of the BookTitle, ChapterID, and VerseID. Since this is a
-computed column; therefore, you can not set its [Entity
+computed column; therefore, the author is not able to set its [Entity
 Integrity](http://en.wikipedia.org/wiki/Entity_integrity); if it were
 not; the SQL statement
 `ALTER TABLE Bible..Scripture ADD CONSTRAINT uc_Scripture_ScriptureReference UNIQUE (ScriptureReference)`
@@ -2975,6 +2978,16 @@ commentary="When I am doing this? What do I become?" location="Shower"}
 >         Version (KJV). [Singularity of the
 >         Composition.](http://e-comfort.ephraimtech.com/WordEngineering/WordUnion/GetAPage.html?word=Singularity%20of%20the%20Composition.){dated="2025-05-17T21:17:00"
 >         hiswordid="166243"}
+>     -   2025-05-22T18:10:00Immutability:
+>         1.  2025-05-22T18:16:00Object-oriented technology serves
+>             change states.
+>         2.  2025-05-22T18:25:00Inheritance, interface, method
+>             overloading, encapsulation, polymorphism, are all
+>             object-oriented principles.
+>         3.  2025-05-22T18:17:00As is of the need for database storage.
+>         4.  2025-05-22T18:20:00Variable initialization and refreshing
+>             with default value, constant, static, readonly.
+>     -   2025-05-22T18:31:00Practical need for recursion?
 
 (Ben Weidig, 2023-05-09).
 
@@ -2997,6 +3010,14 @@ commentary="When I am doing this? What do I become?" location="Shower"}
 >     hiswordid="166256" contactid="13526"
 >     url="dbta.com/Editorial/Trends-and-Applications/RESEARCH-at-DBTA-Survey-Reveals-the-Pervasiveness-of-%e2%80%98Dark-Data-160191.aspx"
 >     commentary="I saw Lauren Kong, Carl Kong, and Doudou Kong waiting to get into their car... on their way to school."}
+>
+> lang attribute
+> :   As advised, the author specifies the English language on the HTML
+>     tag. As of this time, the language attribute is not specified
+>     elsewhere. 2025-05-20T09:32:00 [Who speaks\... on\...
+>     authority?](http://e-comfort.ephraimtech.com/WordEngineering/WordUnion/GetAPage.html?word=Who%20speaks...%20on...%20authority%3F){dated="2025-05-20T09:32:00"
+>     hiswordid="166262" contactid="3577"
+>     url="npr.org/sections/thetwo-way/2014/10/28/359564982/pope-says-god-not-a-magician-with-a-magic-wand"}
 >
 > #### 2025-05-15T20:20:00 Data Modeler {#DataModeler dated="2025-05-15T20:20:00"}
 >
