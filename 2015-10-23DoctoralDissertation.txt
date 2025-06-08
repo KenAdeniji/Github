@@ -630,6 +630,85 @@ and resemblances in the Bible.
 > |                       |                       | irefox-newtab-en-us"} |
 > |                       |                       | -   Telephone number  |
 > +-----------------------+-----------------------+-----------------------+
+> | Categorical Scales    |                       | Dewey Decimal         |
+> |                       |                       | Classification used   |
+> |                       |                       | in libraries          |
+> +-----------------------+-----------------------+-----------------------+
+> | Absolute Scales       | An absolute scale is  | -   This may be the   |
+> |                       | a count of            |     physical count of |
+> |                       | individual, distinct  |     word occurrences  |
+> |                       | items in the set.     |     in the Bible.     |
+> |                       |                       | -   The count of      |
+> |                       |                       |     books that are in |
+> |                       |                       |     the Bible groups. |
+> |                       |                       |     For example,      |
+> |                       |                       |     there are 5 books |
+> |                       |                       |     by Moses, and 4   |
+> |                       |                       |     Gospel books.     |
+> |                       |                       | -   The SQL COUNT()   |
+> |                       |                       |     function returns  |
+> |                       |                       |     the number of     |
+> |                       |                       |     rows that matches |
+> |                       |                       |     a specified       |
+> |                       |                       |     criterion.        |
+> |                       |                       | -   The Microsoft SQL |
+> |                       |                       |     Server variable   |
+> |                       |                       |     @@ROWCOUNT        |
+> |                       |                       |     returns the       |
+> |                       |                       |     affected rows     |
+> |                       |                       |     from any          |
+> |                       |                       |     statement, even   |
+> |                       |                       |     if it\'s not DML  |
+> |                       |                       |     or a SELECT       |
+> |                       |                       |     query.            |
+> +-----------------------+-----------------------+-----------------------+
+> | Ordinal Scales        | An ordinal scale puts | -   In an ordered     |
+> |                       | the attribute in a    |     list HTML         |
+> |                       | linear order. There   |     element,          |
+> |                       | are no operations or  |                       |
+> |                       | computations done     |   2025-06-08T09:22:00 |
+> |                       | with it.              |     [the list items   |
+> |                       |                       |     are sequentially  |
+> |                       |                       |     a                 |
+> |                       |                       | rranged.](http://e-co |
+> |                       |                       | mfort.ephraimtech.com |
+> |                       |                       | /WordEngineering/Word |
+> |                       |                       | Union/GetAPage.html?w |
+> |                       |                       | ord=the%20list%20item |
+> |                       |                       | s%20are%20sequentiall |
+> |                       |                       | y%20arranged.){dated= |
+> |                       |                       | "2025-06-08T09:22:00" |
+> |                       |                       |                       |
+> |                       |                       |   hiswordid="166433"} |
+> |                       |                       | -   An identity       |
+> |                       |                       |     column is a       |
+> |                       |                       |     numeric column in |
+> |                       |                       |     a table that is   |
+> |                       |                       |     automatically     |
+> |                       |                       |     populated with an |
+> |                       |                       |     integer value     |
+> |                       |                       |     each time a row   |
+> |                       |                       |     is inserted.      |
+> |                       |                       | -   The               |
+> |                       |                       |     \@counter-style   |
+> |                       |                       |     CSS at-rule lets  |
+> |                       |                       |     you extend        |
+> |                       |                       |     predefined list   |
+> |                       |                       |     styles and define |
+> |                       |                       |     your own counter  |
+> |                       |                       |     styles that are   |
+> |                       |                       |     not part of the   |
+> |                       |                       |     predefined set of |
+> |                       |                       |     styles. The       |
+> |                       |                       |     \@counter-style   |
+> |                       |                       |     rule contains     |
+> |                       |                       |     descriptors       |
+> |                       |                       |     defining how the  |
+> |                       |                       |     counter value is  |
+> |                       |                       |     converted into a  |
+> |                       |                       |     string            |
+> |                       |                       |     representation.   |
+> +-----------------------+-----------------------+-----------------------+
 >
 > : Scales & Measurements {#ScalesMeasurements}
 
@@ -3104,6 +3183,14 @@ commentary="When I am doing this? What do I become?" location="Shower"}
 1.  Joseph ( [Genesis
     50:20](http://e-comfort.ephraimtech.com/WordEngineering/WordUnion/ScriptureReference.html?scriptureReference=Genesis%2050:20)
     )
+
+### 2025-06-07T15:13:00 [What we have as a later use?](http://e-comfort.ephraimtech.com/WordEngineering/WordUnion/GetAPage.html?word=What%20we%20have%20as%20a%20later%20use%3F){dated="2025-06-07T15:13:00" hiswordid="166423" contactid="11300"} {#WhatWeHaveAsALaterUse}
+
+1.  2025-06-07T17:22:00 Joseph ( [Genesis
+    41:34-36](http://e-comfort.ephraimtech.com/WordEngineering/WordUnion/ScriptureReference.html?scriptureReference=Genesis%2041:34-36){dated="2025-06-07T17:22:00"}
+    )
+
+The impetus for database recording was to re-use.
 
 > ### 2025-05-17T20:07:00 Functional Programming\... Computed Columns {#FunctionalProgrammingComputedColumns}
 >
