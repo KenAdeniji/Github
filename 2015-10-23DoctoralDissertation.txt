@@ -3373,6 +3373,17 @@ The impetus for database recording was to re-use.
 
 (John Dean, 2018-01-09).
 
+> ### 2025-06-27T20:10:00A/B Testing (or split testing) {#ABTesting dated="2025-06-27T20:10:00"}
+>
+>   ASP.Net Web Forms - control version   HTML5 Asynchronous JavaScript XMLHTTPRequest (AJAX) - treatment version
+>   ------------------------------------- --------------------------------------------------------------------------------------------------------
+>   Deprecated                            build-measure-learn
+>   Proprietary                           Open source, 2025-06-27T20:55:00[ and availability of learning materials]{dated="2025-06-27T20:55:00"}
+>
+>   : Interest of the users
+
+(Marco Tulio Valente).
+
 ### 2025-05-15T22:09:00 [What did He call time?](http://e-comfort.ephraimtech.com/WordEngineering/WordUnion/GetAPage.html?word=What%20did%20He%20call%20time%3F){dated="2025-05-15T22:09:00" hiswordid="166196" contactid="9562"} {#WhatDidHeCallTime data-datetime="2025-05-15T22:09:00"}
 
 1.  [In the
