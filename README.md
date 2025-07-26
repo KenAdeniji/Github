@@ -2,6 +2,8 @@
 <a href="2015-10-23DoctoralDissertation.html">2015-10-23DoctoralDissertation.html</a><br>
 <a href="KenAdenijiResume.html">KenAdenijiResume.html</a><br>
 <a href="2024-09-16KenAdenijiResume.mp4">2024-09-16KenAdenijiResume.mp4</a><br>
+<a href="2025-07-25T1539WhatTheWordSaidAsAReference.json">What the word said as a reference</a><br>
+<a href="2025-07-25T0517IHaveJustCompletedMigratingSoftware.ThereWere2StreamlinedProcesses.json">I have just completed migrating a software. There were 2 streamline processes.</a><br>
 <a href="Using HTML5 Speech Synthesis.html">Using HTML5 Speech Synthesis</a><br>
 <a href="DateComputation.html">DateComputation.html</a><br>
 <a href="HoursWorkedAsTwoLong.html">Hours worked as two long</a><br>
