@@ -44,7 +44,7 @@ backward verse are the corresponding, anticlockwise places.
 ]{dated="2020-09-15T00:00:00"}
 :::
 
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: {.section style="margin-left:25%"}
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: {.section style="margin-left:25%"}
 The importance of this work?
 
 -   [Follow God, as a
@@ -3200,8 +3200,11 @@ hiswordid="149206"}
     the third word is the VerseID.
 :::
 
-Biblical numbers for calculation. Biblical separation into Testaments,
-books, chapters and verses for referencing.
+::: {dated="2023-08-06T23:16:00" contactid="10999" hiswordid="156497"}
+-   Biblical numbers for calculation.
+-   Biblical separation into Testaments, books, chapters and verses for
+    referencing.
+:::
 
 ::: {dated="2024-01-05T15:54:00"}
 Biblical generation - 40 Biblical years
@@ -11086,4 +11089,4 @@ Copyright ©
 []{#copyrightYear}\
 
 Ken Adeniji <KenAdeniji@hotmail.com>
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
