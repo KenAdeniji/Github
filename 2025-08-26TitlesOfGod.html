@@ -1,6 +1,18 @@
 <html>
 	<!--
 		2025-08-26 Created.
+SELECT
+	'new TitleOfGod("' + 
+	ISNULL(WordEngineering..GodTitle.Title, '') + 
+	'", "' + 
+	ISNULL(WordEngineering..GodTitle.Commentary, '') + 
+	'", "' + 
+	ISNULL(WordEngineering..GodTitle.ScriptureReference, '') + 
+	'", "' + 
+	ISNULL(WordEngineering..GodTitle.Hebrew, '') + 
+	'"),'
+FROM WordEngineering..GodTitle
+ORDER BY GodTitleID
 	-->
 	<head>
 		<title>Titles of God</title>
