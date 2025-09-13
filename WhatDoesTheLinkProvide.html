@@ -20,6 +20,8 @@ export function isInternalLink(urlString: string): boolean | {
 		http://stackoverflow.com/questions/2910946/test-if-links-are-external-with-jquery-javascript/18660968#18660968
 		http://stackoverflow.com/questions/36631762/returning-html-with-fetch
 		http://stackoverflow.com/questions/3999101/get-iframes-document-from-javascript-in-main-document
+		
+		2025-09-13T14:40:00 http://stackoverflow.com/questions/28430115/javascript-get-size-in-bytes-from-html-img-src
 	-->	
 	<head>
 		<title>What does the link provide?</title>
@@ -120,6 +122,7 @@ export function isInternalLink(urlString: string): boolean | {
 
 			function querySubmit()
 			{
+				var	frameHTMLDocument;
 				fetch
 				(
 					sourceAddressElement.value
@@ -162,8 +165,8 @@ export function isInternalLink(urlString: string): boolean | {
 								// this is text, do something with it
 								sourceContentElement.value = text;
 								frameInfoElement.srcdoc = text;
-								var	frameHTMLDocument = frameInfoElement.contentDocument || frameInfoElement.contentWindow.document;
-								//queryElementTypeStatistics(frameHTMLDocument);
+								frameHTMLDocument = frameInfoElement.contentDocument || frameInfoElement.contentWindow.document;
+								queryElementTypeStatistics(frameHTMLDocument);
 								queryImageTypeStatistics(frameHTMLDocument);
 							}
 						);
@@ -171,20 +174,20 @@ export function isInternalLink(urlString: string): boolean | {
 				});
 			}
 
-/*
 			async function queryElementTypeStatistics(frameHTMLDocument)
 			{
 				var elementTypeCount;
-				var elementTypeStatistics = "<table><thead><tr><th>Element Type</th><th>Count</th></tr></thead><tbody>";
+				var elementStatistics = "<table><thead><tr><th>Element Type</th><th>Count</th></tr></thead><tbody>";
+
 				for (const elementType of SelectorElementTypes)
 				{
 					elementTypeCount = frameHTMLDocument.querySelectorAll(elementType).length;
-					elementTypeStatistic += `<tr><td>${elementType}</td><td>${elementTypeCount}</td></tr>`;
+					elementStatistics += `<tr><td>${elementType}</td><td>${elementTypeCount}</td></tr>`;
 				}
-				elementTypeStatistics += "</tbody></table>"
-				resultSetElementTypeStatisticsElement.innerHTML = elementsTypesStatistics;
+				elementStatistics += "</tbody></table>";
+				resultSetElementTypeStatisticsElement.innerHTML = elementStatistics;
+				
 			}
-*/
 			
 			async function queryImageTypeStatistics(frameHTMLDocument)
 			{
@@ -200,9 +203,9 @@ export function isInternalLink(urlString: string): boolean | {
 				{
 					imageSrc = imageElements[elementIndex].src;
 					fileImg = await fetch(imageSrc).then(r => r.blob()); //This will get the resource through HTTP and then returns the full binary as a blob object, then you can access its properties including its size in bytes as:
-					elementStatistics += `<tr><td>${elementIndex}</td><td>${imageSrc}</td><td>${fileImg.size}</td></tr>`;
+					elementStatistics += `<tr><td>${elementIndex + 1}</td><td><a href="${imageSrc}">${imageSrc}</a></td><td>${fileImg.size}</td></tr>`;
 				}
-				elementStatistics += "</tbody></table>"
+				elementStatistics += "</tbody></table>";
 				resultSetImageTypeStatisticsElement.innerHTML = elementStatistics;
 			}
 			
