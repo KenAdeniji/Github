@@ -200,10 +200,10 @@ export function isInternalLink(urlString: string): boolean | {
 				{
 					imageSrc = imageElements[elementIndex].src;
 					fileImg = await fetch(imageSrc).then(r => r.blob()); //This will get the resource through HTTP and then returns the full binary as a blob object, then you can access its properties including its size in bytes as:
-					elementStatistic += `<tr><td>${elementIndex}</td><td>${imageSrc}</td><td>${fileImg.size}</td></tr>`;
+					elementStatistics += `<tr><td>${elementIndex}</td><td>${imageSrc}</td><td>${fileImg.size}</td></tr>`;
 				}
 				elementStatistics += "</tbody></table>"
-				resultSetImageTypeStatisticsElement.innerHTML = elementsTypesStatistics;
+				resultSetImageTypeStatisticsElement.innerHTML = elementStatistics;
 			}
 			
 			submitQueryElement.addEventListener("click", querySubmit, false);
