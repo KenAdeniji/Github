@@ -41,24 +41,10 @@
 				{
 					const urlParams = new URLSearchParams(window.location.search);
 					var location_urlParam = urlParams.get("location_url");
-					console.log
-					(
-						"location_urlParam",
-						location_urlParam
-					);
-					resultSetElement.innerHTML = location_urlParam;
-					location_urlElement.value = (location_urlParam) ? location_urlParam : LocationURL;
-					resultSetElement.innerHTML = location_urlElement.value;
-					console.log
-					(
-						"location_urlElement.value",
-						location_urlElement.value
-					);
-					console.log
-					(
-						"resultSetElement.innerHTML",
-						resultSetElement.innerHTML
-					);
+					if (location_urlParam)
+					{
+						location_urlElement.value = (location_urlParam);
+					}
 					querySubmit();	
 					isPostBack = true;
 				}
