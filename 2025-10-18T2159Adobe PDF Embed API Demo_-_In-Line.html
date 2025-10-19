@@ -1,0 +1,133 @@
+<html>
+	<!--
+		2025-10-18T22:10:00	http://github.com/adobe/pdf-embed-api-samples
+		http://documentservices.adobe.com/view-sdk-demo/index.html#/view/IN_LINE/Bodea%20Brochure.pdf
+	-->
+	<head>
+		<title>adobe.com pdf</title>
+		<meta charset="UTF-8"/>
+		<meta name="description" content="adobe.com pdf"/>
+		<meta name="keyword" content="adobe.com pdf"/>
+		<meta name="robots" content="index, follow"/>
+		<meta name="author" content="Ken Adeniji"/>
+		<link rel="stylesheet" type="text/css" href="/WordEngineering/WordUnion/9432.css">
+	</head>
+	<body>
+		<div align="center">
+			<table>
+				<tr>
+					<td><label for="location_url">Location url</label></td>
+					<td><input id="location_url" type="url" value="https://documentservices.adobe.com/view-sdk-demo/PDFs/Bodea Brochure.pdf" autofocus/></td>
+				</tr>
+				<tr><td colspan="2" align="center"><input type="submit" id="submitQuery"/></td></tr>
+			</table>
+			<div id="resultSet"></div>
+		</div>
+		<div id="adobe-dc-view" style="width: 800px;"></div>
+		<script src="https://documentservices.adobe.com/view-sdk/viewer.js"></script>
+		<script>
+			console.log("isPostBack");
+			var isPostBack = false;
+			console.log(isPostBack);
+
+			const	location_urlElement = document.getElementById("location_url");
+			const	submitQueryElement = document.getElementById("submitQuery");
+			const	resultSetElement = document.getElementById("resultSet");
+			
+			resultSet.innerHTML = location_url.value;
+			function pageLoad()
+			{
+				if (isPostBack === false)
+				{
+					const urlParams = new URLSearchParams(window.location.search);
+					var location_urlParam = urlParams.get("location_url");
+					console.log
+					(
+						"location_urlParam",
+						location_urlParam
+					);
+					resultSetElement.innerHTML = location_urlParam;
+					location_urlElement.value = (location_urlParam) ? location_urlParam : LocationURL;
+					resultSetElement.innerHTML = location_urlElement.value;
+					console.log
+					(
+						"location_urlElement.value",
+						location_urlElement.value
+					);
+					console.log
+					(
+						"resultSetElement.innerHTML",
+						resultSetElement.innerHTML
+					);
+					querySubmit();	
+					isPostBack = true;
+				}
+				else
+				{
+					querySubmit();
+				}	
+			}
+				
+			function querySubmit() 
+			{
+				var locationFileName = location_urlElement.value.substring
+				(
+						location_urlElement.value.lastIndexOf('/') + 1
+				);
+				console.log
+				(
+					location_urlElement.value,
+					locationFileName
+				);	
+				resultSetElement.innerHTML = location_urlElement.value + locationFileName;
+				document.addEventListener
+				(
+					"adobe_dc_view_sdk.ready", 
+					function()
+					{ 
+						var adobeDCView = new AdobeDC.View
+						(
+							{
+								clientId: ClientID,
+								divId: "adobe-dc-view"
+							}
+						);
+						adobeDCView.previewFile
+						(
+							{
+								content:
+								{
+									location: 
+									{
+										url: location_urlElement.value
+									}
+								},
+								metaData:
+								{
+									fileName: locationFileName
+								}
+							}, 
+							{
+								embedMode: "IN_LINE"
+							}
+						);
+					}
+				);
+			}
+
+			submitQueryElement.addEventListener("click", querySubmit, false);
+
+			var body = document.getElementsByTagName('body')[0];
+			body.onkeydown = function (e) {
+				if (e.keyCode === 13) {  //enter key code
+					querySubmit();
+				}
+			}	
+
+			window.addEventListener("load", pageLoad, false);
+			
+			const 	ClientID = "176b171827184f0781582c23dd43f96f";
+			const	LocationURL = "https://documentservices.adobe.com/view-sdk-demo/PDFs/Bodea Brochure.pdf";
+		</script>
+	</body>
+</html>
