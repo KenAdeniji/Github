@@ -22,19 +22,16 @@
 				<tr><td colspan="2" align="center"><input type="submit" id="submitQuery"/></td></tr>
 			</table>
 			<div id="resultSet"></div>
+			<div id="adobe-dc-view" style="width: 800px;"></div>
 		</div>
-		<div id="adobe-dc-view" style="width: 800px;"></div>
 		<script src="https://documentservices.adobe.com/view-sdk/viewer.js"></script>
 		<script>
-			console.log("isPostBack");
 			var isPostBack = false;
-			console.log(isPostBack);
 
 			const	location_urlElement = document.getElementById("location_url");
 			const	submitQueryElement = document.getElementById("submitQuery");
 			const	resultSetElement = document.getElementById("resultSet");
 			
-			resultSet.innerHTML = location_url.value;
 			function pageLoad()
 			{
 				if (isPostBack === false)
@@ -45,59 +42,36 @@
 					{
 						location_urlElement.value = (location_urlParam);
 					}
-					querySubmit();	
 					isPostBack = true;
 				}
-				else
-				{
-					querySubmit();
-				}	
 			}
 				
 			function querySubmit() 
 			{
 				var locationFileName = location_urlElement.value.substring
-				(
+					(
 						location_urlElement.value.lastIndexOf('/') + 1
+					);
+				var adobeDCView = new AdobeDC.View
+				(
+					{clientId: ClientID, divId: "adobe-dc-view"}
 				);
-				console.log
+				adobeDCView.previewFile
 				(
-					location_urlElement.value,
-					locationFileName
-				);	
-				resultSetElement.innerHTML = location_urlElement.value + locationFileName;
-				document.addEventListener
-				(
-					"adobe_dc_view_sdk.ready", 
-					function()
-					{ 
-						var adobeDCView = new AdobeDC.View
-						(
+					{
+						content:
+						{
+							location: 
 							{
-								clientId: ClientID,
-								divId: "adobe-dc-view"
+								url: location_urlElement.value
 							}
-						);
-						adobeDCView.previewFile
-						(
-							{
-								content:
-								{
-									location: 
-									{
-										url: location_urlElement.value
-									}
-								},
-								metaData:
-								{
-									fileName: locationFileName
-								}
-							}, 
-							{
-								embedMode: "IN_LINE"
-							}
-						);
-					}
+						},
+						metaData:
+						{
+							fileName: locationFileName
+						}
+					},
+					{}
 				);
 			}
 
@@ -111,9 +85,12 @@
 			}	
 
 			window.addEventListener("load", pageLoad, false);
+
+			document.addEventListener("adobe_dc_view_sdk.ready", querySubmit);
 			
 			const 	ClientID = "176b171827184f0781582c23dd43f96f";
 			const	LocationURL = "https://documentservices.adobe.com/view-sdk-demo/PDFs/Bodea Brochure.pdf";
 		</script>
+
 	</body>
 </html>
