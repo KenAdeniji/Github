@@ -1,7 +1,8 @@
 # Github
 <a href="2015-10-23DoctoralDissertation.html">2015-10-23DoctoralDissertation.html</a><br>
 <a href="KenAdenijiResume.html">KenAdenijiResume.html</a><br>
-<a href="2024-09-16KenAdenijiResume.mp4">2024-09-16KenAdenijiResume.mp4</a><br>
+<a href="2025-10-20KenAdenijiResume.mp3">2025-10-20KenAdenijiResume.mp3</a><br>
+<a href="DataManipulationLanguageDML-DocumentObjectModelDOM.html">DataManipulationLanguageDML-DocumentObjectModelDOM.html</a><br>
 <a href="WhatDoesTheLinkProvide.html">What does the link provide?</a><br>
 <a href="IUnderstoodAboutPeriodAndHowItIsManifested.html">I understood about period, and how it is manifested</a><br>
 <a href="2025-08-26TitlesOfGod.html">Titles of God</a><br>
