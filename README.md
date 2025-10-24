@@ -3,7 +3,7 @@
 <a href="KenAdenijiResume.html">KenAdenijiResume.html</a><br>
 <a href="2024-09-16KenAdenijiResume.mp4">2024-09-16KenAdenijiResume.mp4</a><br>
 <a href="WhatDoesTheLinkProvide.html">What does the link provide?</a><br>
-<a href="IUnderstoodAboutPeriodAndHowItIsManifested.html">I understood about period and how it is manifested</a><br>
+<a href="IUnderstoodAboutPeriodAndHowItIsManifested.html">I understood about period, and how it is manifested</a><br>
 <a href="2025-08-26TitlesOfGod.html">Titles of God</a><br>
 <a href="2025-09-12T1121IvanBozhanov_-_vakata_PlovdivBulgaria_jstree_AbrahamGenealogy.html">Genealogy of Abraham</a><br>
 <a href="JulieCMeloni_-_MoveContainer.html">Move Container</a><br>
