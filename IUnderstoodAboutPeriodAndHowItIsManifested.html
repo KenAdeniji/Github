@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<!--
-		2025-08-01T05:30:00	Created.
-		2025-07-31 What does the link provide?
+		2025-10-23T22:00:00	Created.
+		2025-08-01T05:30:00	Created. 2025-07-31 What does the link provide?
 		2025-02-02T19:22:00
 http://stackoverflow.com/questions/71501786/how-to-parse-html-response-from-fetch-api-to-iframe
 export function isInternalLink(urlString: string): boolean | {
@@ -61,10 +61,10 @@ export function isInternalLink(urlString: string): boolean | {
 			}, 3000);			
 	-->	
 	<head>
-		<title>What does the link provide?</title>
+		<title>I understood about period, and how it is manifested.</title>
 		<meta charset="UTF-8"/>
-		<meta name="description" content="What does the link provide?"/>
-		<meta name="keyword" content="anchor href"/>
+		<meta name="description" content="I understood about period, and how it is manifested."/>
+		<meta name="keyword" content="time element, datetime attribute, data- attributes cross-reference"/>
 		<meta name="robots" content="index, follow"/>
 		<meta name="author" content="Ken Adeniji"/>
 		<style>
@@ -120,7 +120,7 @@ export function isInternalLink(urlString: string): boolean | {
 			<br/>	
 			<div id="resultSet">
 				<div id="resultSetElementTypeStatistics"></div>
-				<div id="resultSetImageTypeStatistics"></div>
+				<div id="resultSetTimeTypeStatistics"></div>
 			</div>
 		</div>	
 		<script>
@@ -139,7 +139,7 @@ export function isInternalLink(urlString: string): boolean | {
 			const 	resultSetElement = document.getElementById("resultSet");
 			
 			const 	resultSetElementTypeStatisticsElement = document.getElementById("resultSetElementTypeStatistics");
-			const	resultSetImageTypeStatisticsElement = document.getElementById("resultSetImageTypeStatistics");
+			const	resultSetTimeTypeStatisticsElement = document.getElementById("resultSetTimeTypeStatistics");
 			
 			function pageLoad()
 			{
@@ -235,7 +235,7 @@ export function isInternalLink(urlString: string): boolean | {
 			function queryGenerateStatistics(frameHTMLDocument)
 			{
 				queryElementTypeStatistics(frameHTMLDocument);
-				queryImageTypeStatistics(frameHTMLDocument);
+				queryTimeTypeStatistics(frameHTMLDocument);
 			}
 
 			function queryElementTypeStatistics(frameHTMLDocument)
@@ -251,24 +251,23 @@ export function isInternalLink(urlString: string): boolean | {
 				resultSetElementTypeStatisticsElement.innerHTML = elementStatistics;
 			}
 
-			async function queryImageTypeStatistics(frameHTMLDocument)
+			async function queryTimeTypeStatistics(frameHTMLDocument)
 			{
-				var imageElements = frameHTMLDocument.querySelectorAll("img");
-				var elementStatistics = "<table><thead><tr><th>Index</th><th>Universal Resource Link (url)</th><th>Size</th></tr></thead><tbody>";
-				var imageSrc, fileImg;
+				var timeElements = frameHTMLDocument.querySelectorAll("time");
+				var elementStatistics = "<table><caption>time element: datetime attribute</caption><thead><tr><th>Index</th><th>DateTime</th></tr></thead><tbody>";
+				var dateTime;
 				for 
 				(
-					var elementIndex = 0, elementCount = imageElements.length;
+					var elementIndex = 0, elementCount = timeElements.length;
 					elementIndex < elementCount;
 					elementIndex++
 				)
 				{
-					imageSrc = imageElements[elementIndex].src;
-					fileImg = await fetch(imageSrc).then(r => r.blob()); //This will get the resource through HTTP and then returns the full binary as a blob object, then you can access its properties including its size in bytes as:
-					elementStatistics += `<tr><td>${elementIndex + 1}</td><td><a href="${imageSrc}">${imageSrc}</a></td><td>${fileImg.size}</td></tr>`;
+					dateTime = timeElements[elementIndex].dateTime;
+					elementStatistics += `<tr><td>${elementIndex + 1}</td><td>${dateTime}</td></tr>`;
 				}
 				elementStatistics += "</tbody></table>";
-				resultSetImageTypeStatisticsElement.innerHTML = elementStatistics;
+				resultSetTimeTypeStatisticsElement.innerHTML = elementStatistics;
 			}
 			
 			submitQueryElement.addEventListener("click", querySubmit, false);
@@ -300,7 +299,7 @@ export function isInternalLink(urlString: string): boolean | {
 				false
 			);
 		
-			const SelectorElementTypes = ["*", "script", "style", "img"];
+			const SelectorElementTypes = ["time"];
 		</script>		
 	</body>
 </html>
