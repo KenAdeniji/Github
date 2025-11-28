@@ -2,6 +2,7 @@
 <a href="2015-10-23DoctoralDissertation.html">2015-10-23DoctoralDissertation.html</a><br>
 <a href="KenAdenijiResume.html">KenAdenijiResume.html</a><br>
 <a href="2025-10-20KenAdenijiResume.mp3">2025-10-20KenAdenijiResume.mp3</a><br>
+<a href="2025-11-26Schema.org_-_Person.html">2025-11-26Schema.org Person</a><br>
 <a href="WillTargetTuesdayDecemberThirtyFirst.html">WillTargetTuesdayDecemberThirtyFirst.html</a><br>
 <a href="DataManipulationLanguageDML-DocumentObjectModelDOM.html">DataManipulationLanguageDML-DocumentObjectModelDOM.html</a><br>
 <a href="2025-11-14T0802HowWeHaveTimeAsTheSame.html">How we have time as the same?</a><br>
