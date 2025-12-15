@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<!--
-		2025-12-14T00:47:00... Created.
+		2025-12-14T00:47:00...2025-12-14T02:04:00 Created. 
+		http://kenadeniji.github.io/Github/2025-12-14T0047JobDescriptionForFull-StackDeveloperForNetToolKit_RegularExpressionMatchStartingWord.html
 		http://sfbay.craigslist.org/sby/sof/d/san-jose-back-end-developer-at-tiny/7899663411.html
 		http://docs.google.com/document/d/1RwxCghey6xDnjvBhi87GsGWgyXF_aA_xZF-y6FbWs4U/edit?tab=t.0
 		http://nettoolkit.com 
@@ -27,6 +28,7 @@ console.log(found);
 		http://stackoverflow.com/questions/3559883/javascript-split-regex-question
 		http://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of
 		http://stackoverflow.com/questions/14978625/regex-to-check-whether-string-starts-with-ignoring-case-differences
+		2025-12-14T02:04:00 const SeparatorPunctuation = /[.,;? ]/;
 	-->	
 	<head>
 		<title>2025-12-14T00:47:Job Description for Full-Stack Developer for NetToolKit_Regular Expression match starting word</title>
@@ -108,7 +110,7 @@ console.log(found);
 		<table>
 			<tr>
 				<td><label for="stringValues">String values</label></td>
-				<td><textarea id="stringValues">zone, zoo, and zoom. Autozone.</textarea></td>
+				<td><textarea id="stringValues">zone, zoo, and zoom? Autozone.</textarea></td>
 			</tr>
 			<tr>
 				<td><label for="matchingStartingWord">Matching starting word</label></td>
@@ -135,7 +137,7 @@ console.log(found);
 				const found = stringValuesElement.value.match(regex);
 				resultSetElement.value = found;
 */				
-				const words = stringValuesElement.value.split(/[.,; ]/);
+				const words = stringValuesElement.value.split(SeparatorPunctuation);
 				const pattern = "^" + matchingStartingWordElement.value + "";
 				const regex = new RegExp(pattern, "i");
 				var wordCombined = "";
@@ -164,6 +166,8 @@ console.log(found);
 					querySubmit();
 				}
 			}
+			
+			const SeparatorPunctuation = /[.,;? ]/;
 		</script>		
 	</body>
 </html>
