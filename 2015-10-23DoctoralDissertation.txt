@@ -3493,15 +3493,15 @@ commentary="When I am doing this? What do I become?" location="Shower"}
 >
 > #### 2025-12-22T18:12:00 What is a UI framework? {#WhatIsAUIFramework dated="2025-12-22T18:12:00"}
 >
-> -   Widget libraries: The author primary uses pairs of label and
->     input, submit, and rarely select, and radio controls. Although the
->     author has experimented with Microsoft ASP.Net link button, in the
->     past, it is no longer an utensil, since it depends on the
->     availability of JavaScript.
+> -   Widget libraries: The author primary uses pairs of labels and
+>     inputs; submit button; and rarely select, and radio controls.
+>     Although the author has experimented with the Microsoft ASP.NET
+>     link button, in the past, it is no longer a utensil, since it
+>     depends on the availability of JavaScript.
 > -   UI description: The domain-specific language (DSL) that the author
 >     now favors is HTML, but he initially, adopted XML/XSLT.
 > -   Layout: For backward compatibility, the author still relies on the
->     HTML table has his layout manager.
+>     HTML table as his layout manager.
 
 Ian Hickson (2025-10-23T19:51:00).
 
