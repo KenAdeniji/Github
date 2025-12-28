@@ -3,6 +3,7 @@
 <a href="KenAdenijiResume.html">KenAdenijiResume.html</a><br>
 <a href="2025-10-20KenAdenijiResume.mp3">2025-10-20KenAdenijiResume.mp3</a><br>
 <a href="AishaqAndTraining.html">AishaqAndTraining.html</a><br>
+<a href="2025-12-28T1353BiblicalLine.html">2025-12-28T1353BiblicalLine.html</a><br>
 <a href="2025-11-26Schema.org_-_Person.html">2025-11-26Schema.org Person</a><br>
 <a href="WillTargetTuesdayDecemberThirtyFirst.html">WillTargetTuesdayDecemberThirtyFirst.html</a><br>
 <a href="DataManipulationLanguageDML-DocumentObjectModelDOM.html">DataManipulationLanguageDML-DocumentObjectModelDOM.html</a><br>
