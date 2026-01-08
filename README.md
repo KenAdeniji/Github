@@ -4,6 +4,7 @@
 <a href="2025-10-20KenAdenijiResume.mp3">2025-10-20KenAdenijiResume.mp3</a><br>
 <a href="AishaqAndTraining.html">AishaqAndTraining.html</a><br>
 <a href="2025-12-28T1353BiblicalLine.html">2025-12-28T1353BiblicalLine.html</a><br>
+<a href="ASCIICode_-_FilesystemNamingConventionIncludingSpecialCharactersAndVariableNames.html">ASCII Code Filesystem naming convention including special characters and variable names</a><br>
 <a href="2025-11-26Schema.org_-_Person.html">2025-11-26Schema.org Person</a><br>
 <a href="WillTargetTuesdayDecemberThirtyFirst.html">WillTargetTuesdayDecemberThirtyFirst.html</a><br>
 <a href="DataManipulationLanguageDML-DocumentObjectModelDOM.html">DataManipulationLanguageDML-DocumentObjectModelDOM.html</a><br>
