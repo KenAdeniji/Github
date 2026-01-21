@@ -33,3 +33,6 @@
 <a href="HaishiBai_-_ByHowMuchDoesRedundancyImproveAvailability.html">Haishi Bai: How much does redundancy improve availability?</a><br>
 <a href="2025-03-29T1852jobs@docspot.com_-_DocSpotOperationsAssociate.html">2025-03-29T1852 DocSpot Operations Associate</a><br>
 <a href="2025-12-14T0047JobDescriptionForFull-StackDeveloperForNetToolKit_RegularExpressionMatchStartingWord.html">2025-12-14T0047Job Description for Full-Stack Developer for NetToolKit Regular Expression Match Starting Word</a><br>
+<a href="2026-01-20T1207_-_2025.stateofhtml.com_-_open-ui.org_-_CustomizableSelect_-_Pyramid.html">2026-01-20T1207 2025.stateofhtml.com open-ui.org Customizable Select Pyramid</a><br>
+
+
