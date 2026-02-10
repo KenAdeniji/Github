@@ -639,6 +639,18 @@ and resemblances in the Bible.
 | github.com/KenAdeniji | [github.com/Ken       | Source control.       |
 |                       | Adeniji](http://www.g | <http://kenaden       |
 |                       | ithub.com/KenAdeniji) | iji.github.io/Github> |
+|                       |                       | 2026-02-05T11:46:00   |
+|                       |                       | [GitHub date          |
+|                       |                       | joined?](http:/       |
+|                       |                       | /e-comfort.ephraimtec |
+|                       |                       | h.com/WordEngineering |
+|                       |                       | /WordUnion/GetAPage.h |
+|                       |                       | tml?word=GitHub%20dat |
+|                       |                       | e%20joined%3F){dated= |
+|                       |                       | "2026-02-05T11:46:00" |
+|                       |                       | contactid="11252"     |
+|                       |                       | hiswordid="168521"}   |
+|                       |                       | 2013-04-27            |
 +-----------------------+-----------------------+-----------------------+
 | Microsoft SQL Server  | <http://e             | The author has been   |
 |                       | n.wikipedia.org/wiki/ | using relational      |
@@ -1395,10 +1407,10 @@ resources](http://e-comfort.ephraimtech.com/WordEngineering/WordUnion/GetAPage.h
 >
 >   Statement               Commentary
 >   ----------------------- ----------------------------------------------------------------------------------------------
->   sp_databases            The sole work of the author, the WordEngineering database size, is currently 33317504 bytes.
->   sp_server_info          The database version is Microsoft SQL Server 2022 - 16.0.1000.6
->   sp_spaceused            The WordEngineering database currently uses 32536.63 MB.
->   sp_statistics HisWord   The cardinality of the HisWord table is 114243.
+>   sp_databases            The sole work of the author, the WordEngineering database size, is currently 33351360 bytes.
+>   sp_server_info          The database version is Microsoft SQL Server 2025 - 17.0.1050.2
+>   sp_spaceused            The WordEngineering database currently uses 32569.69 MB.
+>   sp_statistics HisWord   The cardinality of the HisWord table is 121880.
 >   xp_fixeddrives          Returns a list of physical hard drives and the amount of free space on each one.
 >   xp_msver                Returns version information about SQL Server.
 >
@@ -9494,6 +9506,12 @@ hiswordid="158633" url="Stephanie.Rydland@USPTO.GOV" contactid="2100"}
     32:8](http://e-comfort.ephraimtech.com/WordEngineering/WordUnion/ScriptureReference.html?scriptureReference=Deuteronomy%2032:8)
     )?
 -   It is one man doing\...it is many doing.
+
+### 2026-02-09T21:51:00 [What did He pair? To be essentially the way](http://e-comfort.ephraimtech.com/WordEngineering/WordUnion/GetAPage.html?word=What%20did%20He%20pair%3F%20To%20be%20essentially%20the%20way%3F){dated="2026-02-09T21:51:00" hiswordid="168552" commentary="2026-02-09T21:42:00 What did He pair? 2026-02-09T21:51:00 To be essentially the way."} ( [Genesis 1:26](http://e-comfort.ephraimtech.com/WordEngineering/WordUnion/ScriptureReference.html?scriptureReference=Genesis%201:26){dated="2026-02-09T21:55:00" hiswordid="168552"} ). {#WhatDidHePair_ToBeEssentiallyTheWay dated="2026-02-09T21:42:00"}
+
+-   Father, Son, Holy Ghost: Creator
+-   Great lights: Signs
+-   Angels and man
 
 ### [To seek someone else as I](http://e-comfort.ephraimtech.com/WordEngineering/WordUnion/GetAPage.html?word=To%20seek%20someone%20else%20as%20I.){dated="2023-10-22T07:13:00" hiswordid="158459"} {#ToSeekSomeoneElseAsI dated="2023-10-22T07:13:00"}
 
