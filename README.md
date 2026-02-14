@@ -3,6 +3,7 @@
 <a href="KenAdenijiResume.html">KenAdenijiResume.html</a><br>
 <a href="2025-10-20KenAdenijiResume.mp3">2025-10-20KenAdenijiResume.mp3</a><br>
 <a href="AishaqAndTraining.html">AishaqAndTraining.html</a><br>
+<a href="2026-02-13T1414WhatSeparationHasHeConfigure.html">2026-02-13T14:14:00 What separation has He configure</a><br>
 <a href="2026-02-02T2206_-_UsingDetailsElement_NameAttribute_ToCreateExclusiveAccordions_-_BaptismOfJohnTheBaptist...BaptismOfTheHolySpirit.html">2026-02-02T22:06:00 OpenUI.org Baptism of John The Baptist... Baptism of the Holy Spirit</a><br>
 <a href="2026-01-23T1055DateSpanInJesusLife_IMustBe.html">2026-01-23T10:55:00 Date span in Jesus life. I must be.</a><br>
 <a href="2025-01-24T1257MetricConversion.html">2025-01-24T12:57:00 Metric conversion</a><br>
