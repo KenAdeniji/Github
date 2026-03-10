@@ -4,6 +4,7 @@
 <a href="2025-10-20KenAdenijiResume.mp3">2025-10-20KenAdenijiResume.mp3</a><br>
 <a href="2004-11-10www.JesusInTheLamb.com_-_WalkingInTheLambYouShallFollowMe_-_2026-02-17Trademark_DomainName_Registration.txt">2004-11-10www.JesusInTheLamb.com Walking in the Lamb, you shall follow Me. 2026-02-17 Trademark Domain name registration.</a><br>
 <a href="AishaqAndTraining.html">AishaqAndTraining.html</a><br>
+<a href="2026-03-08T2016DifferenceBetweenTwoSequentialRows.html"></a>Difference between two sequential rows<br>
 <a href="2026-03-02WhatIsApplicableOfTheTrade.html">2026-03-02 What is applicable of the trade</a><br>
 <a href="2026-02-13T1414WhatSeparationHasHeConfigure.html">2026-02-13T14:14:00 What separation has He configure</a><br>
 <a href="2026-02-02T2206_-_UsingDetailsElement_NameAttribute_ToCreateExclusiveAccordions_-_BaptismOfJohnTheBaptist...BaptismOfTheHolySpirit.html">2026-02-02T22:06:00 OpenUI.org Baptism of John The Baptist... Baptism of the Holy Spirit</a><br>
