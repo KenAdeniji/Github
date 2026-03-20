@@ -844,6 +844,17 @@ is for determining the upper limit. The SQL statement
 
 will set the range restriction.
 
+``` {dated="2026-03-20T11:57:00"}
+SELECT          TOP (1) BookID, ChapterID, VerseID, AmericanStandardBible, BibleInBasicEnglish, DarbyEnglishBible, KingJamesVersion, WebsterBible, WorldEnglishBible, YoungLiteralTranslation, ChapterIDSequence, VerseIDSequence, 
+                AccordingToManyIHaveSpokenID, Testament, BookTitle, ScriptureReference, ChapterIDSequencePercent, VerseIDSequencePercent, BibleReference, BookGroup, BookAuthor
+FROM            Scripture_View
+ORDER BY VerseID DESC
+```
+
+Will say the longest verse occurs in the 19th book of the Bible, Psalms,
+and its 119th chapter; 597th chapter of the Bible, 16075th verse of the
+Bible.
+
 </div>
 
 ##### The Scripture Table\'s KingJamesVersion Column {#ScriptureTableKingJamesVersionColumn}
