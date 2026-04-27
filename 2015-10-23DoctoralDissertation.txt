@@ -6365,7 +6365,8 @@ The author is linking words spoken to related verses and dictionaries.
 
 (Allen G. Taylor, 2019).
 
-> ### Software Engineer versus (VS) Database Administrator {#SoftwareEngineerVersusDatabaseAdministrator dated="2024-04-21T02:59:00" commentary="Mummy Taruben Patel"}
+> ### Software Engineer versus (VS) Database Administrator {#SoftwareEngineerVersusDatabaseAdministrator dated="2024-04-21T02:59:00" commentary="Mummy Taruben Patel. 2026-04-27T10:26:00 For the 2 years after the end of my consulting contract with Westpac in December 1997, from 1998 until 2000, I was not growing technically. I was working as a SQL Server Database Administrator (DBA), and not as a Software Engineer.
+>  How long does it take to learn operations work, and can we automate this type of work?" contactid="10750"}
 >
 >   Keyword                                                                                               Software Engineer                                                                                                                                                             Database Administrator
 >   ----------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
