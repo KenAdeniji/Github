@@ -465,6 +465,14 @@ SELECT MAX(ChapterID) FROM Bible..Scripture
 ALTER TABLE Bible..Scripture WITH CHECK ADD CONSTRAINT CK_Scripture_ChapterID_Range CHECK  (([ChapterID]&gt;=(1) AND [ChapterID]&lt;=(150)))
 </code></pre>
 				will set the range restriction.
+				<br>
+				<a 
+					href="http://e-comfort.ephraimtech.com/WordEngineering/WordUnion/GetAPage.html?word=There%20are%20individual%20chapters%20for%20each%20book."
+					data-Dated="2026-04-28T14:49:00"
+					data-HisWordID="170302"
+				>
+					There are individual chapters for each book.
+				</a>
 			</div>
 
 			<h5 id="ScriptureTableVerseIDColumn">The Scripture Table's VerseID Column</h5>
@@ -535,7 +543,7 @@ dbo.udf_BookTitle(BookID)
 				</span>
 			</div>	
 			
-			<h5 id="ScriptureTableScriptureReferenceColumn">The Scripture Table's ScriptureReference Column</h5>
+			<h5 id="Scripture_ViewScriptureReferenceColumn">The Scripture View's ScriptureReference Column</h5>
 
 			<div>
 				The SQL statement 
