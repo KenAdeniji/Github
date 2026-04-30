@@ -65,22 +65,6 @@ this.men = [
 
 console.log
 (
-	this.men.find
-	(
-		(element) => element.named === "Joseph"
-	).correct()
-);
-
-console.log
-(
-	this.men.find
-	(
-		(element) => element.named === "Jacob"
-	).correct()
-);
-
-console.log
-(
 	"Joseph.(correct)",
 	this.men.find
 	(
