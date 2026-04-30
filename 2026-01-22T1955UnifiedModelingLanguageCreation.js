@@ -17,9 +17,12 @@
 	2026-04-29T16:34:00 new Man("Joseph", "Jacob", "Rachel", "Dreamer", null), Hakeem Olajuwon, the Dream of all basketball coaches
 	2026-04-29T16:52:00	http://mozilladatacollective.com/datasets?utm_source=mdn&utm_medium=paid&utm_campaign=open-data
 	2026-04-29T17:11:00	http://docs.github.com/en/actions/tutorials/create-actions/create-a-javascript-action
-	2026-04-30T10:46:00
+	2026-04-30T10:46:00	Natural primary key. get() method ... set() method.
 		this.men.find((element) => element.named === "Jacob")["correct"] = "Genesis 48:19";
 		this.men.find((element) => element.named === "Joseph")["correct"] = "Genesis 50:20, Genesis 39:8-9";
+		2026-04-30 12:26:11.033
+			Whoever practice sin is a slave of sin... the slave doesn't reside in the house, forever.	
+				John 8:34-35, Matthew 24:15-16, Mark 13:14, Luke 21:20-21
 */
 class Man {
 	constructor(named, father, mother, titled, vocation) {
