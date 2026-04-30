@@ -37,6 +37,7 @@ class Man {
 	marriage() {}
 	knew() {}
 	sacrifice() {}
+	//2026-04-29T16:34:00
 	/*
 	correct() {
 		var scriptureReference = "";
@@ -67,8 +68,10 @@ this.men = [
 	new Man("Abel", "Adam", "Eve", null, "Animal breeder"),
 	new Man("Seth", "Adam", "Eve", "Substitute", "Call on the name of God"),
 	new Man("Enosh", "Seth", null, null, "Call on the name of God"),
+	new Man("Abraham", "Terah", null, "Father of many nations", null),
 	new Man("Jacob", "Isaac", "Rebecca", "Israel - Prince with God", null),
 	new Man("Joseph", "Jacob", "Rachel", "Dreamer", null),
+	new Man("David", "Jesse", null, "A man after God's own heart", "A man of war"),
 ];
 
 /*
@@ -87,7 +90,17 @@ console.log
 );
 */
 
+//2026-04-30T10:46:00	Natural primary key. get() method ... set() method.
 this.men.find((element) => element.named === "Jacob")["correct"] = "Genesis 48:19";
 this.men.find((element) => element.named === "Joseph")["correct"] = "Genesis 50:20, Genesis 39:8-9";
+
+//2026-04-30T14:16:00	Out of him
+this.men.find((element) => element.named === "Adam")["outOfHim"] = "Genesis 2:23";
+
+this.men.find((element) => element.named === "Abraham")["heir"] = "Genesis 15:4";
+this.men.find((element) => element.named === "Abraham")["seed"] = "Genesis 21:12";
+this.men.find((element) => element.named === "Abraham")["onlySon"] = "Genesis 22:2";
+
+this.men.find((element) => element.named === "David")["seed"] = "2 Samuel 7:12";
 
 console.log(this.men);
