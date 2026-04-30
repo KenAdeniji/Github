@@ -63,7 +63,22 @@ this.men = [
 	new Man("Joseph", "Jacob", "Rachel", "Dreamer", null),
 ];
 
-/*
+console.log
+(
+	this.men.find
+	(
+		(element) => element.named === "Joseph"
+	).correct()
+);
+
+console.log
+(
+	this.men.find
+	(
+		(element) => element.named === "Jacob"
+	).correct()
+);
+
 console.log
 (
 	"Joseph.(correct)",
@@ -72,23 +87,6 @@ console.log
 		(element) => element.named === "Joseph"
 	).correct(),
 	"Jacob.(correct)",
-	this.men.find
-	(
-		(element) => element.named === "Jacob"
-	).correct()
-);
-*/
-
-console.log
-(
-	this.men.find
-	(
-		(element) => element.named === "Joseph"
-	).correct()
-);
-
-console.log
-(
 	this.men.find
 	(
 		(element) => element.named === "Jacob"
