@@ -82,7 +82,7 @@
 						<tr>
 							<td><label for="sourceSelector">Source Selector:</label></td>
 							<td>
-								<textarea id="sourceSelector">table, ol, ul, li</textarea>
+								<textarea id="sourceSelector">h1, h2, h3, h4, h5, h6, table, ol, ul, li</textarea>
 							</td>
 						</tr>
 						<tr>
@@ -91,7 +91,12 @@
 								<textarea id="sourceContent"></textarea>
 							</td>
 						</tr>
-						<tr><td colspan="2" align="center"><input type="submit" id="submitQuery"></td></tr>
+						<tr>
+							<td colspan="2" align="center">
+								<input type="submit" id="submitQuery">
+								<button type="button" id="toggleDisplay">Toggle display</button>
+							</td>
+						</tr>
 					</table>
 				<div>	
 			<form>	
@@ -111,6 +116,8 @@
 			const	sourceContentElement = document.getElementById("sourceContent");
 
 			const 	submitQueryElement = document.getElementById("submitQuery");
+			
+			const	toggleDisplayElement = document.getElementById("toggleDisplay");
 
 			const	frameInfoElement = document.getElementById("frameInfo");
 			const 	resultSetElement = document.getElementById("resultSet");
@@ -145,13 +152,15 @@
 
 				sourceContentElement.value = data;
 				frameInfoElement.srcdoc = data;
-				frameHTMLDocument = frameInfoElement.contentDocument || frameInfoElement.contentWindow.document;
+			}
+			
+			function displayToggle()
+			{
+				var	frameHTMLDocument = frameInfoElement.contentDocument || frameInfoElement.contentWindow.document;
 
 				var currentElement;
 
 				var styleDisplayElements = frameHTMLDocument.querySelectorAll(sourceSelectorElement.value);
-				
-				console.log(styleDisplayElements.length);
 				
 				for 
 				(
@@ -174,6 +183,8 @@
 			}
 
 			submitQueryElement.addEventListener("click", querySubmit, false);
+			
+			toggleDisplayElement.addEventListener("click", displayToggle, false);
 		
 			var body = document.getElementsByTagName("body")[0];
 			body.onkeydown = function (e) 
