@@ -7,6 +7,7 @@
 <a href="2026-05-12Walgreens_-_digital-passport_-_KenAdeniji.jpg">2026-05-12 Walgreens digital passport of Ken Adeniji</a><br>
 <a href="2004-11-10www.JesusInTheLamb.com_-_WalkingInTheLambYouShallFollowMe_-_2026-02-17Trademark_DomainName_Registration.txt">2004-11-10www.JesusInTheLamb.com Walking in the Lamb, you shall follow Me. 2026-02-17 Trademark Domain name registration.</a><br>
 <a href="AishaqAndTraining.html">AishaqAndTraining.html</a><br>
+<a href="2026-06-05T1201When they come... to their... senses... you will come to yours.html">2026-06-05T1201When they come... to their... senses... you will come to yours</a><br>
 <a href="2026-01-22T1955UnifiedModelingLanguageCreation.js">2026-01-22T1955UnifiedModelingLanguageCreation.js</a><br>
 <a href="2026-05-03T1842DocumentObjectModelDOMTheGreatestLength_ToggleDisplay.html">The Greatest Length. Toggle Display</a><br>
 <a href="2026-05-06T1028DocumentObjectModelDOMConvertOrderedlistNumberingType.html">Convert Ordered List Numbering Type</a><br>
