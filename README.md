@@ -9,6 +9,7 @@
 <a href="AishaqAndTraining.html">AishaqAndTraining.html</a><br>
 <a href="2026-06-05T1201When they come... to their... senses... you will come to yours.html">2026-06-05T1201When they come... to their... senses... you will come to yours</a><br>
 <a href="2026-06-06T1116Generate_Series().html">2026-06-06T1116 Generate Series</a><br>
+<a href="2026-06-06T1802Greatest()_Least().html">2026-06-06T1802 Greatest Least</a><br>
 <a href="2026-01-22T1955UnifiedModelingLanguageCreation.js">2026-01-22T1955UnifiedModelingLanguageCreation.js</a><br>
 <a href="2026-05-03T1842DocumentObjectModelDOMTheGreatestLength_ToggleDisplay.html">The Greatest Length. Toggle Display</a><br>
 <a href="2026-05-06T1028DocumentObjectModelDOMConvertOrderedlistNumberingType.html">Convert Ordered List Numbering Type</a><br>
