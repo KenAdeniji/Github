@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<!-- 
+		2026-07-01T11:38:00 http://javascript.info/map-set
+		2026-07-01T15:03:00	http://stackoverflow.com/questions/175739/how-can-i-check-if-a-string-is-a-valid-number
+		2026-07-01T15:03:00	I knew about data type, and it is the key technology... I learnt from Ilya Kantor... you have to be careful about data type.
+	-->
+	<head>
+		<title>2026-07-01T11:38:00 http://javascript.info/map-set</title>
+		<meta charset="UTF-8"/>
+		<meta name="description" content="2026-07-01T11:38:00 http://javascript.info/map-set"/>
+		<meta name="keyword" content="map"/>
+		<meta name="robots" content="index, follow"/>
+		<meta name="author" content="Ken Adeniji"/>
+		<style>
+			html, body
+			{
+			  height: 100%;
+			  width: 100%;
+			}
+			
+			table 
+			{
+			   border: 1px solid black;
+			   border-spacing: 5px;
+			   border-collapse: separate;
+			}
+
+			th, td 
+			{ 
+				padding:5px 10px; border:#4e95f4 1px solid;
+			}
+
+			th 
+			{
+				background: blue;
+			}
+
+			tr:nth-child(even) 
+			{
+				background: #E1EEF4;
+			}
+			
+			textarea
+			{ 
+				height: 25vh;
+				width: 95vw;
+			}
+	</style>
+	</head>
+	</body>
+		<div>
+			<form method="post" id="formed" action="javascript:void(0);">
+				<div align="center">
+					<textarea id="word">1, Exodus</textarea><br>
+					<input type="submit" id="submitQuery"><br>
+					<table id="resultSetBibleBooksTable">
+						<caption>Bible Books</caption>
+						<thead>
+							<tr>
+								<th>ID</th>
+								<th>Title</th>
+							</tr>
+						</thead>
+						<tbody id="resultSetBibleBooksTableBody"></tbody>
+					</table><br>
+					<div id="resultSet"></div>
+				<div>	
+			<form>	
+		</div>	
+		<script type="module">
+			//import { BibleBook } from "./2026-07-01T1144IlyaKantor_-_JavaScript.info_-_Map_-_BibleBook.js"
+			let {BibleBook} = await import("./2026-07-01T1144IlyaKantor_-_JavaScript.info_-_Map_-_BibleBook.js")
+		
+			var isPostBack = false;
+			
+			const 	formedElement = document.getElementById("formed");
+			const 	submitQueryElement = document.getElementById("submitQuery");
+			const 	wordElement = document.getElementById("word");
+			const	resultSetElement = document.getElementById("resultSet");
+			const	resultSetBibleBooksTableElement = document.getElementById("resultSetBibleBooksTable");
+			const	resultSetBibleBooksTableBodyElement = document.getElementById("resultSetBibleBooksTableBody");
+
+			let map = new Map();
+			
+			BibleBook.BibleBooks.forEach
+			(
+				(element) => {
+					map.set(element.bookID, element);	// a numeric key
+					map.set(element.bookTitle, element);   // a string key
+				}	
+			);
+			
+			function pageLoad()
+			{
+				if (isPostBack === false)
+				{
+					const urlParams = new URLSearchParams(window.location.search);
+					var wordParam = urlParams.get("word");
+					if (wordParam)
+					{
+						wordElement.value = wordParam;
+					}	
+					if (wordElement.value)
+					{
+						querySubmit();
+					}	
+					
+					isPostBack = true;
+				}
+				else
+				{
+					querySubmit();
+				}
+ 			}
+
+			async function querySubmit()
+			{
+				var stub = "";
+				
+				var words = wordElement.value.split(/[,;]+/);
+				
+				var wordKey;
+				var wordValue;
+				var	wordDataType;
+				
+				words.forEach
+				(
+					(element) => {
+						wordKey = element.trim();
+						if (/^\d+$/.test(wordKey))
+						{
+							wordKey = Number.parseInt(wordKey);
+						}
+						wordValue = map.get(wordKey);
+						if (wordValue)
+						{
+							stub += `<tr><td>${wordKey}</td><td>${wordValue}</td></tr>`;
+						}
+					}	
+				);
+				resultSetBibleBooksTableBodyElement.innerHTML = stub;
+			}
+			
+			submitQueryElement.addEventListener("click", querySubmit, false);
+			
+			var body = document.getElementsByTagName("body")[0];
+			body.onkeydown = function (e) 
+			{
+				if (e.keyCode === 13) 
+				{  //enter key code
+					querySubmit();
+				}
+			}
+
+			window.addEventListener("load", pageLoad, false);
+		</script>		
+	</body>
+</html>
