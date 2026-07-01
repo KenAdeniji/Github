@@ -9,6 +9,7 @@
 <a href="AishaqAndTraining.html">AishaqAndTraining.html</a><br>
 <a href="2026-06-22T2153DannyGoodman_-_Social Security number (SSN)_-_Area number XXX_-_Group number XX_-_Serial number XXXX.html">2026-06-22T2153DannyGoodman_-_Social Security number (SSN)_-_Area number XXX_-_Group number XX_-_Serial number XXXX.html</a><br>
 <a href="2026-06-05T1201When they come... to their... senses... you will come to yours.html">2026-06-05T1201When they come... to their... senses... you will come to yours</a><br>
+<a href="2026-06-30T1652raymondcamden.com_-_FrankTisellano.github.io_-_datatype.html">2026-06-30T18522026-06-30T1652raymondcamden.com FrankTisellano.github.io datatype.html</a><br>
 <a href="2026-06-06T1116Generate_Series().html">2026-06-06T1116 Generate Series</a><br>
 <a href="2026-06-06T1802Greatest()_Least().html">2026-06-06T1802 Greatest Least</a><br>
 <a href="2026-01-22T1955UnifiedModelingLanguageCreation.js">2026-01-22T1955UnifiedModelingLanguageCreation.js</a><br>
