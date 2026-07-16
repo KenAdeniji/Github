@@ -3931,7 +3931,7 @@ Interval: 105744.14005183718 Thursday October 13 0321 0321-10-13.
     scripturereference="Daniel 2:38, Genesis 1:19"} ( [Daniel 2:38,
     Genesis
     1:19](http://e-comfort.ephraimtech.com/WordEngineering/WordUnion/ScriptureReference.html?scriptureReference=Daniel%202:38,%20Genesis%201:19){dated="2026-07-15T19:44:00"
-    hiswordid="170935" contactid="2036"
+    hiswordid="170935" contactid="1364"
     location="Albertsons Lucky, Charter Square. Tony, Head Clerk."
     scripturereference="Daniel 2:38, Genesis 1:19"} )?
 
