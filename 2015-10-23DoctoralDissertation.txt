@@ -33,11 +33,9 @@ Translate English\... Yoruba
 
 **Thesis Statement:** This dissertation introduces
 [AlphabetSequence](http://e-comfort.ephraimtech.com/WordEngineering/WordUnion/GetAPage.html)
-( [2 Corinthians
-10:9-18](http://e-comfort.ephraimtech.com/WordEngineering/WordUnion/ScriptureReference.html?scriptureReference=2%20Corinthians%2010:9-18){dated="2022-01-07T09:08:00"
-word="That create." hiswordid="144962" contactid="11433"} ). The
-[AlphabetSequenceIndex]{.dfn dated="2025-05-20T20:34:00"} is the [result
-of a pure function to sum alphabet places]{dated="2020-09-09T00:00:00"}
+(2 Corinthians 10:9-18). The [AlphabetSequenceIndex]{.dfn
+dated="2025-05-20T20:34:00"} is the [result of a pure function to sum
+alphabet places]{dated="2020-09-09T00:00:00"}
 [AlphabetSequence.cs](http://github.com/KenAdeniji/WordEngineering/blob/master/InformationInTransit/ProcessLogic/AlphabetSequence.cs)
 . [ The [AlphabetSequenceIndexScriptureReference]{.dfn
 dated="2025-05-20T20:24:00"} are the offsets from the beginning and the
@@ -71,8 +69,7 @@ Holy Spirit, churches.
 ## Acknowledgments {#Acknowledgments}
 
 Chuck Missler of [Koinonia House (KHouse)](http://www.khouse.org) is
-worthy of note, faith ([Hebrews
-11](http://e-comfort.ephraimtech.com/WordEngineering/WordUnion/ScriptureReference.html?scriptureReference=Hebrews%2011)).
+worthy of note, faith.
 
 The author is indebted to [Ury Schecow](mailto:ury@socs.uts.edu.au), his
 Master\'s degree supervisor, at the [University of Technology,
@@ -106,18 +103,12 @@ on future artifacts. But when one reads the Bible, the book of
 Revelation, which starts with the letters to the 7 churches in Asia
 Minor, does not instigate future alteration.
 
-1.  2026-07-24T08:54:00 Ongoing ( [Genesis
-    22](http://e-comfort.ephraimtech.com/WordEngineering/WordUnion/ScriptureReference.html?scriptureReference=Genesis%2022){dated="2026-07-24T08:54:00"}
-    )
-2.  Rest ( [John 19:30,
-    Hebrews](http://e-comfort.ephraimtech.com/WordEngineering/WordUnion/ScriptureReference.html?scriptureReference=John%2019:30,%20Hebrews)
-    )
+1.  2026-07-24T08:54:00 Ongoing (Exodus 23:30, Genesis 22)
+2.  Rest (John 19:30, Hebrews)
 
 ### 2026-06-24T18:01:00 [What use is the word\... according to you?](http://e-comfort.ephraimtech.com/WordEngineering/WordUnion/GetAPage.html?word=What%20use%20is%20the%20word...%20according%20to%20you%3F){dated="2026-06-24T18:01:00" contactid="1075" hiswordid="170770" url="www.JesusInTheLamb.com"} {#WhatUseIsTheWordAccordingToYou}
 
-1.  Synonymous ( [Genesis 22:8, Genesis
-    22:13](http://e-comfort.ephraimtech.com/WordEngineering/WordUnion/ScriptureReference.html?scriptureReference=Genesis%2022:8,%20Genesis%2022:13)
-    )
+1.  Synonymous (Genesis 22:8, Genesis 22:13)
 2.  Domain name valid
 3.  Grammar correct
 
