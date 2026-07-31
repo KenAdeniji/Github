@@ -86,13 +86,17 @@ tr:nth-child(even) {
 				</tr>
 			</table>
 			<div id="alphabetSequenceIndex"></div>
+			<div id="alphabetSequenceIndexScriptureReference"></div>
 		</div>
 
-		<script>
+		<script type="module">
+			let {BibleJSON} = await import("https://kenadeniji.github.io/Github/Bible.json")	
+		
 			const	wordElement = document.getElementById("word");
 			const	submitQueryElement = document.getElementById("submitQuery");
 			const	alphabetSequenceIndexElement = document.getElementById("alphabetSequenceIndex");
-	
+			const	alphabetSequenceIndexScriptureReferenceElement = document.getElementById("alphabetSequenceIndexScriptureReference");
+			
 			var 	isPostBack = false;
 
 			function pageLoad()
@@ -118,6 +122,11 @@ tr:nth-child(even) {
 
 			async function querySubmit()
 			{
+				alphabetSequenceQuery();
+			}
+			
+			function alphabetSequenceQuery()
+			{
 				alphabetSequenceIndexElement.innerHTML = "";
 				if (!isNaN(parseFloat(wordElement.value)) && isFinite(wordElement.value))
 				{
@@ -138,6 +147,33 @@ tr:nth-child(even) {
 					}					
 					alphabetSequenceIndexElement.innerHTML = alphabetSequencePlace;	
 				}
+				const verseIDResult = BibleJSON.find(function(item) { return item.verseIdSequence = alphabetSequenceIndexElement.innerHTML });
+				alphabetSequenceIndexScriptureReferenceElement.innerHTML = verseIDResult;
+			}
+			
+			async function getData() 
+			{
+			  const url = "https://kenadeniji.github.io/Github/Bible.json";
+			  try {
+				const response = await fetch(url);
+				if (!response.ok) {
+				  throw new Error(`Response status: ${response.status}`);
+				}
+
+				const result = response.json();
+				alphabetSequenceIndexScriptureReferenceElement.innerHTML = result;
+				//console.log(result);
+				//alphabetSequenceIndexScriptureReferenceElement.innerHTML = JSON.stringify(result);
+				//var found = arr.filter(function(item) { return item.name === 'k1'; });
+				//const verseIDResult = result.find((element) => element.Table.verseIdSequence == alphabetSequenceIndexElement.innerHTML);
+				//const verseIDResult = result.find(function(item) { return item.verseIdSequence = alphabetSequenceIndexElement.innerHTML });
+				//let verseIDResult = result.find((s) => s.verseIdSequence == alphabetSequenceIndexElement.innerHTML);
+				let verseIDResult = result;
+				//console.log(verseIDResult);
+				alphabetSequenceIndexScriptureReferenceElement.innerHTML = verseIDResult;
+			  } catch (error) {
+				console.error(error.message);
+			  }
 			}
 			
 			window.addEventListener("load", pageLoad, false);
