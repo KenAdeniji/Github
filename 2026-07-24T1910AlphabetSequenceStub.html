@@ -89,8 +89,8 @@ tr:nth-child(even) {
 			<div id="alphabetSequenceIndexScriptureReference"></div>
 		</div>
 
-		<script type="module">
-			import { BibleJSON } from "./Bible.json"
+		<script>
+			//import { BibleJSON } from "./Bible.json"
 			//let {BibleJSON} = await import("./Bible.json")	
 
 			const	wordElement = document.getElementById("word");
@@ -121,15 +121,16 @@ tr:nth-child(even) {
 				}
 			}
 
-			async function querySubmit()
+			function querySubmit()
 			{
 				alphabetSequenceQuery();
+				getData();
 			}
 			
 			function alphabetSequenceQuery()
 			{
 				alphabetSequenceIndexElement.innerHTML = "";
-				//alphabetSequenceIndexScriptureReferenceElement.innerHTML = "verseIDResult";
+				alphabetSequenceIndexScriptureReferenceElement.innerHTML = "";
 				if (!isNaN(parseFloat(wordElement.value)) && isFinite(wordElement.value))
 				{
 					alphabetSequenceIndexElement.innerHTML = wordElement.value;
@@ -149,9 +150,6 @@ tr:nth-child(even) {
 					}					
 					alphabetSequenceIndexElement.innerHTML = alphabetSequencePlace;	
 				}
-				//const verseIDResult = BibleJSON.find(function(item) { return item.verseIdSequence = alphabetSequenceIndexElement.innerHTML });
-				//const verseIDResult = BibleJSON["Table"][alphabetSequenceIndexElement.innerHTML];
-				alphabetSequenceIndexScriptureReferenceElement.innerHTML = "verseIDResult";
 			}
 			
 			async function getData() 
@@ -164,16 +162,14 @@ tr:nth-child(even) {
 				}
 
 				const result = response.json();
-				alphabetSequenceIndexScriptureReferenceElement.innerHTML = result;
-				//console.log(result);
-				//alphabetSequenceIndexScriptureReferenceElement.innerHTML = JSON.stringify(result);
+				console.log(result);
 				//var found = arr.filter(function(item) { return item.name === 'k1'; });
 				//const verseIDResult = result.find((element) => element.Table.verseIdSequence == alphabetSequenceIndexElement.innerHTML);
 				//const verseIDResult = result.find(function(item) { return item.verseIdSequence = alphabetSequenceIndexElement.innerHTML });
 				//let verseIDResult = result.find((s) => s.verseIdSequence == alphabetSequenceIndexElement.innerHTML);
-				let verseIDResult = result;
+				//let verseIDResult = result;
 				//console.log(verseIDResult);
-				alphabetSequenceIndexScriptureReferenceElement.innerHTML = verseIDResult;
+				alphabetSequenceIndexScriptureReferenceElement.innerHTML = result; //["Table"][0].verseText;
 			  } catch (error) {
 				console.error(error.message);
 			  }
