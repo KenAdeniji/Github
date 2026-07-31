@@ -147,7 +147,8 @@ tr:nth-child(even) {
 					}					
 					alphabetSequenceIndexElement.innerHTML = alphabetSequencePlace;	
 				}
-				const verseIDResult = BibleJSON.find(function(item) { return item.verseIdSequence = alphabetSequenceIndexElement.innerHTML });
+				//const verseIDResult = BibleJSON.find(function(item) { return item.verseIdSequence = alphabetSequenceIndexElement.innerHTML });
+				const verseIDResult = BibleJSON["Table"][alphabetSequenceIndexElement.innerHTML];
 				alphabetSequenceIndexScriptureReferenceElement.innerHTML = verseIDResult;
 			}
 			
