@@ -90,7 +90,8 @@ tr:nth-child(even) {
 		</div>
 
 		<script type="module">
-			let {BibleJSON} = await import("./Bible.json")	
+			import { BibleJSON } from "./Bible.json"
+			//let {BibleJSON} = await import("./Bible.json")	
 		
 			const	wordElement = document.getElementById("word");
 			const	submitQueryElement = document.getElementById("submitQuery");
@@ -128,6 +129,7 @@ tr:nth-child(even) {
 			function alphabetSequenceQuery()
 			{
 				alphabetSequenceIndexElement.innerHTML = "";
+				alphabetSequenceIndexScriptureReferenceElement.innerHTML = "verseIDResult";
 				if (!isNaN(parseFloat(wordElement.value)) && isFinite(wordElement.value))
 				{
 					alphabetSequenceIndexElement.innerHTML = wordElement.value;
@@ -149,7 +151,7 @@ tr:nth-child(even) {
 				}
 				//const verseIDResult = BibleJSON.find(function(item) { return item.verseIdSequence = alphabetSequenceIndexElement.innerHTML });
 				//const verseIDResult = BibleJSON["Table"][alphabetSequenceIndexElement.innerHTML];
-				alphabetSequenceIndexScriptureReferenceElement.innerHTML = "verseIDResult";
+				//alphabetSequenceIndexScriptureReferenceElement.innerHTML = "verseIDResult";
 			}
 			
 			async function getData() 
