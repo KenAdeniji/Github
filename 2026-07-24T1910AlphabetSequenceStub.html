@@ -98,7 +98,10 @@ tr:nth-child(even) {
 			document.body.appendChild(scriptElement);
 		</script>
 
-		<script>
+		<script type="module">
+			//import { BibleBook } from "./2026-07-01T1144IlyaKantor_-_JavaScript.info_-_Map_-_BibleBook.js"
+			let {BibleBook} = await import("./2026-07-01T1144IlyaKantor_-_JavaScript.info_-_Map_-_BibleBook.js")
+		
 			//import { BibleJSON } from "./Bible.json"
 			//let {BibleJSON} = await import("./Bible.json")	
 
@@ -170,11 +173,15 @@ tr:nth-child(even) {
 			async function getData() 
 			{
 				const verseIDSequenceForward = (alphabetSequenceIndexElement.innerHTML % VerseIDMaximum) - 1;
-				const verseIDSequenceForwardScriptureReference = scriptureReferenceConcatenate(Bible.Table[verseIDSequenceForward].BookTitle, Bible.Table[verseIDSequenceForward].ChapterID, Bible.Table[verseIDSequenceForward].VerseID);
+				const verseIDSequenceForwardBookID = Bible.Table[verseIDSequenceForward].BookID;
+				const verseIDSequenceForwardBookTitle = BibleBook.BibleBooks[verseIDSequenceForwardBookID - 1].bookTitle;
+				const verseIDSequenceForwardScriptureReference = scriptureReferenceConcatenate(verseIDSequenceForwardBookTitle, Bible.Table[verseIDSequenceForward].ChapterID, Bible.Table[verseIDSequenceForward].VerseID);
 				const verseIDSequenceForwardVerseText = Bible.Table[verseIDSequenceForward].KingJamesVersion;
 
 				const verseIDSequenceBackward = VerseIDMaximum - verseIDSequenceForward - 2;
-				const verseIDSequenceBackwardScriptureReference = scriptureReferenceConcatenate(Bible.Table[verseIDSequenceBackward].BookTitle, Bible.Table[verseIDSequenceBackward].ChapterID, Bible.Table[verseIDSequenceBackward].VerseID);
+				const verseIDSequenceBackwardBookID = Bible.Table[verseIDSequenceBackward].BookID;
+				const verseIDSequenceBackwardBookTitle = BibleBook.BibleBooks[verseIDSequenceBackwardBookID - 1].bookTitle;
+				const verseIDSequenceBackwardScriptureReference = scriptureReferenceConcatenate(verseIDSequenceBackwardBookTitle, Bible.Table[verseIDSequenceBackward].ChapterID, Bible.Table[verseIDSequenceBackward].VerseID);
 				const verseIDSequenceBackwardVerseText = Bible.Table[verseIDSequenceBackward].KingJamesVersion;
 				
 				const chapterIDSequenceForward = (alphabetSequenceIndexElement.innerHTML % ChapterIDMaximum);
