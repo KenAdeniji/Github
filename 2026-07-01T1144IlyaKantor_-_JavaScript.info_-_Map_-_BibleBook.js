@@ -1,4 +1,5 @@
-export class BibleBook {
+export class BibleBook 
+{
 /*
 	2026-07-01T11:38:00 http://javascript.info/map-set
 	SELECT 'new BibleBook(' + CONVERT(VARCHAR, BookID) + ', "' + BookTitle + '"),'

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--
+			2025-01-01	Who do I choose as one of me... who do I seek as one of you?
+			2025-01-02T07:45:00	http://stackoverflow.com/questions/26825786/count-the-occurrence-of-each-word-in-a-phrase-using-javascript
+function count(str) {
+  var obj = {};
+  
+  str.split(" ").forEach(function(el, i, arr) {
+    obj[el] = obj[el] ? ++obj[el] : 1;
+  });
+  
+  return obj;
+}
+
+console.log(count("olly olly in come free"));
+			2025-01-03T07:51:00	http://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set
+const a = new Set([1, 2, 3]);
+const b = new Map([
+  [1, "one"],
+  [2, "two"],
+  [4, "four"],
+]);
+console.log(a.union(b)); // Set(4) {1, 2, 3, 4}
+		2025-01-20T14:39:39	They keep on insisting... on their brand of Christianity.
+		-->
+		<title>Who do I choose as one of me... who do I seek as one of you?</title>
+		<meta charset="UTF-8"/>
+		<meta name="description" content="Who do I choose as one of me... who do I seek as one of you?"/>
+		<meta name="keywords" content="Word, set"/>
+		<meta name="robots" content="index, follow"/>
+		<meta name="author" content="Ken Adeniji"/>
+		<style>
+			html, body
+			{
+				height: 100%;
+				width: 100%;
+			}
+
+			.focus {
+			  background-color: #ff00ff;
+			  color: #fff;
+			  cursor: pointer;
+			  font-weight: bold;
+			}
+
+			:is(div) :is(div) {
+				border: 1px solid #ccc;
+			}
+
+			html {
+				background-color: #00539F;
+				font-family: Arial, Helvetica, sans-serif;
+			}
+
+			table {
+			   border: 1px solid black;
+			   border-spacing: 5px;
+			   border-collapse: separate;
+			   /* width:100%; */ 
+			}
+
+			th, td { 
+				padding:5px 10px; border:#4e95f4 1px solid;
+			}
+
+			/*  Define the background color for all the ODD background rows  */
+			tr:nth-child(odd) { 
+				background: #b8d1f3;
+			}
+
+			/*  Define the background color for all the EVEN background rows  */
+			tr:nth-child(even) {
+				background: #dae5f4;
+			}
+		</style>
+	</head>
+	<body>
+		<div align="center">
+			<table>
+				<tr>
+					<td><label for="word">Word</label></td>
+					<td><input id="word" type="text" size="50" autofocus value="Who do I choose as one of me... who do I seek as one of you?"></td>
+				</tr>
+				<tr>
+					<td><label for="setSeparator">Set separator</label></td>
+					<td><input id="setSeparator" type="text" size="50" value="..."></td>
+				</tr>
+				<tr>
+					<td><label for="setOperation">Set operation</label></td>
+					<td><select id="setOperation"></select></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><input type="submit" id="submitQuery"></td>
+				</tr>
+			</table>
+			<div id="resultSet"></div>
+		</div>
+
+		<script>
+			const	wordElement = document.getElementById("word");
+			const	setOperationElement = document.getElementById("setOperation");
+			const	setSeparatorElement = document.getElementById("setSeparator");
+			const	submitQueryElement = document.getElementById("submitQuery");
+			const	resultSetElement = document.getElementById("resultSet");
+	
+			var 	isPostBack = false;
+
+			function pageLoad()
+			{
+				if (isPostBack === false)
+				{
+					buildSelect("setOperation", SetCompositionMethodsVennDiagram);
+					querySubmit();
+					isPostBack = true;		
+				}
+				else
+				{
+					querySubmit();
+				}
+			}
+
+			function querySubmit()
+			{
+				let words = wordElement.value.toLocaleLowerCase();
+				words = words.split(setSeparatorElement.value);
+				if (words.length != 2)
+				{
+					resultSetElement.innerHTML = "There must be 2 sets.";
+					return;
+				}
+				words[0] = words[0].trim();
+				words[1] = words[1].trim();
+				let set1 = new Set(words[0].split(/[ ,;.]+/));
+				let set2 = new Set(words[1].split(/[ ,;.]+/));
+
+				/*
+				let setAlgorithmQuestion = set1 + "." + setOperationElement.value + "(" + set2 + ");";
+				let setAlgorithmAnswer = eval( setAlgorithmQuestion );
+				*/
+				
+				let setAlgorithmAnswer;
+				
+				switch( setOperationElement.value )
+				{
+					case "difference":
+						setAlgorithmAnswer = set1.difference(set2);
+						break;
+					case "intersection":
+						setAlgorithmAnswer = set1.intersection(set2);
+						break;
+					case "symmetricDifference":
+						setAlgorithmAnswer = set1.symmetricDifference(set2);
+						break;
+					case "union":
+						setAlgorithmAnswer = set1.union(set2);
+						break;
+				}
+				
+				resultSetElement.innerHTML = Array.from(setAlgorithmAnswer).join(" ");
+			}
+			
+			function buildSelect(selectControl, selectChoices)
+			{
+				var select = document.getElementById(selectControl);
+				select.options.length = 0;
+				for (var index = 0, length = selectChoices.length; index < length; ++index)
+				{
+					var option = document.createElement("option");
+					var multiDimensionArray = (selectChoices[index].constructor === Array);
+					if (selectChoices[index]["text"])
+					{
+						option.text = selectChoices[index]["text"];
+						if (selectChoices[index]["value"])
+						{
+							option.value = selectChoices[index]["value"];
+						}	
+						else
+						{
+							option.value = selectChoices[index]["text"];
+						}	
+					}	
+					else if(multiDimensionArray)				
+					{	
+						option.text = selectChoices[index][0];
+						option.value = selectChoices[index][1];
+					}
+					else
+					{
+						option.text = selectChoices[index];
+						option.value = selectChoices[index];
+					}				
+					select.appendChild(option);
+				}
+			}
+			
+			window.addEventListener("load", pageLoad, false);
+			
+			submitQueryElement.addEventListener("click", querySubmit, false);
+			
+			var body = document.getElementsByTagName('body')[0];
+			body.onkeydown = function (e) {
+				if (e.keyCode === 13) {  //enter key code
+					querySubmit();
+				}
+			}
+			
+			/*  2025-01-03T08:09:00 http://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set Where do you place man? That is absolutely up-to You. Sometimes I read... I refer to later. */	
+			SetCompositionMethodsVennDiagram = 
+			[ 
+				["The difference of A and B is the part of A that is not overlapping B.", "difference"],
+				["The intersection of A and B is the part where they overlap.", "intersection"],
+				["The symmetric difference of A and B is the region contained by either circle but not both.", "symmetricDifference"],
+				["The union of A and B is the region contained by either or both circles.", "union"]
+			];
+		</script>
+	</body>
+</html>
