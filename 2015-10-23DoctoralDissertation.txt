@@ -3878,6 +3878,18 @@ Biblical generation - 40 Biblical years
   2023-05-14 08:20:05.153   [What is this? I try to look at Daniel five.](https://kenadeniji.github.io/Github/2026-07-24T1910AlphabetSequenceStub.html?word=What%20is%20this?%20I%20try%20to%20look%20at%20Daniel%20five.)                                                                                  Daniel 5              2026-05-21T11:21:00 Preserve chapter alphabet sequence             31                32              96.875%                             93.939393939393939393939393939394
   2026-05-21T11:21:00       [Daniel nine twenty-four.](https://kenadeniji.github.io/Github/2026-07-24T1910AlphabetSequenceStub.html?word=Daniel%20nine%20twenty-four.)                                                                                                                                      Daniel 9:24           2026-05-21T11:21:00 Preserve chapter and verse alphabet sequence   1                 33              3.030303030303030303030303030303%   3.030303030303030303030303030303%
 
+  Terminology   Word                                                                                Relational database
+  ------------- ----------------------------------------------------------------------------------- -----------------------------------------------------------
+  Naming        God\'s first commandment to the first man, Adam, was for him to name the animals.   For a relational database, the various objects are named.
+  Counting      God counted the days during creation.                                               Count() keyword.
+  Timing        The greater light, the sun, and the lesser light, the moon, are signs.              GetDate() returns the date and time.
+  Ordering      Greatest commandment, greatest among us, honor thy father and thy mother            ORDER BY ASC, ORDER BY DESC. Lag or lead.
+  Sampling      Wandering years                                                                     ORDER BY newid()
+
+  : 2026-02-02T15:00:00 [Naming, counting, timing, ordering,
+  sampling](https://kenadeniji.github.io/Github/2026-07-24T1910AlphabetSequenceStub.html?word=Naming,%20counting,%20timing,%20ordering,%20sampling){dated="2026-02-02T15:00:00"}
+  {#NamingCountingTimingOrderingSampling}
+
 ### 2026-06-01T03:14:00 Vocation {#Vocation dated="2026-06-01T03:14:00" contactid="1363"}
 
 2026-06-01T03:14:00 In the south, at a station, I watched my twin
@@ -6075,18 +6087,6 @@ url="Andrea@SherlockTalent.com" contactid="11271"}
                                                         commentary="These separate words... mean much to me... as it mean much to you. How will I try... to be someone else?" contactid="483"} (Genesis 11:9, Exodus 12)?
 
   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-  Terminology   Word                                                                                Relational database
-  ------------- ----------------------------------------------------------------------------------- -----------------------------------------------------------
-  Naming        God\'s first commandment to the first man, Adam, was for him to name the animals.   For a relational database, the various objects are named.
-  Counting      God counted the days during creation.                                               Count() keyword.
-  Timing        The greater light, the sun, and the lesser light, the moon, are signs.              GetDate() returns the date and time.
-  Ordering      Greatest commandment, greatest among us, honor thy father and thy mother            ORDER BY ASC, ORDER BY DESC. Lag or lead.
-  Sampling      Wandering years                                                                     ORDER BY newid()
-
-  : 2026-02-02T15:00:00 [Naming, counting, timing, ordering,
-  sampling](https://kenadeniji.github.io/Github/2026-07-24T1910AlphabetSequenceStub.html?word=Naming,%20counting,%20timing,%20ordering,%20sampling){dated="2026-02-02T15:00:00"}
-  {#NamingCountingTimingOrderingSampling}
 
 <div>
 
