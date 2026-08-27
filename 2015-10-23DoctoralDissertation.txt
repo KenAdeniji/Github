@@ -5804,7 +5804,6 @@ clarification.
 | days (11 biblical years, 6        |                                   |
 | biblical months, 4 days) (11      |                                   |
 | years, 4 months, 4 days)\         |                                   |
-| 2014-08-18 Stay the course.\      |                                   |
 | 2026-05-16T18:40:00 [What is in   |                                   |
 | dispute?](https:                  |                                   |
 | //kenadeniji.github.io/Github/202 |                                   |
