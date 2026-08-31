@@ -4,6 +4,7 @@
 <a href="2025-10-20KenAdenijiResume.mp3">2025-10-20KenAdenijiResume.mp3</a><br>
 <a href="2026-07-24T1910AlphabetSequenceStub.html">2026-07-24T1910AlphabetSequenceStub.html</a><br>
 <a href="2026-05-09T0039AlphabetSequence.txt">2026-05-09T0039AlphabetSequence.txt</a><br>
+<a href="DateComputation.html">DateComputation.html</a><br>
 <a href="BibleReference.html">BibleReference.html</a><br>
 <a href="2026-08-28T0346_-_88.html">2026-08-28T0346 88</a><br>
 <a href="2026-04-19T0058CentreForProductivity_-_KenAdeniji_-_1-Page_A4_Profile.txt">2026-04-19T0058 Centre for Productivity 1-Page A4 Profile of Ken Adeniji</a><br>
@@ -54,7 +55,7 @@
 <a href="IsItDuplicates.html">IsItDuplicates.html</a><br>
 <a href="DML Query.html">DML Query</a><br>
 <a href="2024-12-23phoebe.hsukeim@promab.com_-_BawoNiAyaoludi.html">Bawo ni ayaoludi?</a><br>
-<a href="ui-patterns.com_-_PasswordStrengthMeter.html">ui-patterns.com_-_PasswordStrengthMeter.html</a><br>
+<a href="ui-patterns.com_-_PasswordStrengthMeter.html">ui-patterns.com PasswordStrengthMeter.html</a><br>
 <a href="HaishiBai_-_ByHowMuchDoesRedundancyImproveAvailability.html">Haishi Bai: How much does redundancy improve availability?</a><br>
 <a href="2025-03-29T1852jobs@docspot.com_-_DocSpotOperationsAssociate.html">2025-03-29T1852 DocSpot Operations Associate</a><br>
 <a href="2025-12-14T0047JobDescriptionForFull-StackDeveloperForNetToolKit_RegularExpressionMatchStartingWord.html">2025-12-14T0047Job Description for Full-Stack Developer for NetToolKit Regular Expression Match Starting Word</a><br>
