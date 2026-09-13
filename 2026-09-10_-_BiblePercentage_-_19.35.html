@@ -129,25 +129,25 @@ tr:nth-child(even) {
 				let target = 0;
 				let column = "";
 	
-				target = parseFloat(wordElement.value);
+				target = Math.parseFloat(wordElement.value);
 				column = columnVerseIDSequencePercent;
 				const closestVerseForward = Bible.Table.reduce((prev, curr) => {
 					return (Math.abs(curr[column] - target) < Math.abs(prev[column] - target)) ? curr : prev;
 				});
 
-				target = parseFloat(wordElement.value);
+				target = Math.parseFloat(wordElement.value);
 				column = columnChapterIDSequencePercent;
 				const closestChapterForward = Bible.Table.reduce((prev, curr) => {
 					return (Math.abs(curr[column] - target) < Math.abs(prev[column] - target)) ? curr : prev;
 				});
 
-				target = 100 - parseFloat(wordElement.value);
+				target = 100 - Math.parseFloat(wordElement.value);
 				column = columnChapterIDSequencePercent;
 				const closestChapterBackward = Bible.Table.reduce((prev, curr) => {
 					return (Math.abs(curr[column] - target) < Math.abs(prev[column] - target)) ? curr : prev;
 				});
 
-				target = 100 - parseFloat(wordElement.value);
+				target = 100 - Math.parseFloat(wordElement.value);
 				column = columnVerseIDSequencePercent;
 				const closestVerseBackward = Bible.Table.reduce((prev, curr) => {
 					return (Math.abs(curr[column] - target) < Math.abs(prev[column] - target)) ? curr : prev;
