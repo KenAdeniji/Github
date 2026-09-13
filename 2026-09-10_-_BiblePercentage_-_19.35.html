@@ -130,28 +130,28 @@ tr:nth-child(even) {
 				let target = 0;
 				let column = "";
 	
-				target = Math.parseFloat(wordElement.value);
+				target = parseFloat(wordElement.value);
 				column = columnVerseIDSequencePercent;
 				const closestVerseForward = Bible.Table.reduce((prev, curr) => {
 					return (Math.abs(curr[column] - target) < Math.abs(prev[column] - target)) ? curr : prev;
 				});
 				console.debug(target, column, closestVerseForward);
 
-				target = Math.parseFloat(wordElement.value);
+				target = parseFloat(wordElement.value);
 				column = columnChapterIDSequencePercent;
 				const closestChapterForward = Bible.Table.reduce((prev, curr) => {
 					return (Math.abs(curr[column] - target) < Math.abs(prev[column] - target)) ? curr : prev;
 				});
 				console.debug(target, column, closestVerseForward);
 
-				target = 100 - Math.parseFloat(wordElement.value);
+				target = 100 - parseFloat(wordElement.value);
 				column = columnChapterIDSequencePercent;
 				const closestChapterBackward = Bible.Table.reduce((prev, curr) => {
 					return (Math.abs(curr[column] - target) < Math.abs(prev[column] - target)) ? curr : prev;
 				});
 				console.debug(target, column, closestChapterBackward);
 
-				target = 100 - Math.parseFloat(wordElement.value);
+				target = 100 - parseFloat(wordElement.value);
 				column = columnVerseIDSequencePercent;
 				const closestVerseBackward = Bible.Table.reduce((prev, curr) => {
 					return (Math.abs(curr[column] - target) < Math.abs(prev[column] - target)) ? curr : prev;
