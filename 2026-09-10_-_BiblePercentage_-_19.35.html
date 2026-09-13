@@ -153,11 +153,11 @@ tr:nth-child(even) {
 					return (Math.abs(curr[column] - target) < Math.abs(prev[column] - target)) ? curr : prev;
 				});
 
-				scriptureReferenceVerseForward = closestVerseForward.scriptureReference;
-				scriptureReferenceChapterForward = closestChapterForward.bookTitle + closestChapterForward.chapterID;
+				scriptureReferenceVerseForward = closestVerseForward.ScriptureReference;
+				scriptureReferenceChapterForward = closestChapterForward.BookTitle + closestChapterForward.ChapterID;
 
-				scriptureReferenceChapterBackward = closestChapterBackward.bookTitle + closestChapterBackward.chapterID;
-				scriptureReferenceVerseBackward = closestVerseBackward.scriptureReference;
+				scriptureReferenceChapterBackward = closestChapterBackward.BookTitle + closestChapterBackward.ChapterID;
+				scriptureReferenceVerseBackward = closestVerseBackward.ScriptureReference;
 				
 				scriptureReferenceElement.innerHTML = scriptureReferenceVerseForward + ", " +
 					scriptureReferenceChapterForward + ", " +
