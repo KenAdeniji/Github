@@ -158,11 +158,11 @@ tr:nth-child(even) {
 				});
 				console.debug(target, column, closestChapterBackward);
 				
-				scriptureReferenceVerseForward = closestVerseForward.ScriptureReference;
-				scriptureReferenceChapterForward = closestChapterForward.BookTitle + closestChapterForward.ChapterID;
+				scriptureReferenceVerseForward = closestChapterForward.BookTitle + " " + closestChapterForward.ChapterID + ":" + closestChapterForward.VerseID;
+				scriptureReferenceChapterForward = closestChapterForward.BookTitle + " " + closestChapterForward.ChapterID;
 
-				scriptureReferenceChapterBackward = closestChapterBackward.BookTitle + closestChapterBackward.ChapterID;
-				scriptureReferenceVerseBackward = closestVerseBackward.ScriptureReference;
+				scriptureReferenceChapterBackward = closestChapterBackward.BookTitle + " " + closestChapterBackward.ChapterID;
+				scriptureReferenceVerseBackward = closestChapterBackward.BookTitle + " " + closestChapterBackward.ChapterID + ":" + closestChapterBackward.VerseID;
 				
 				console.debug(scriptureReferenceVerseForward, scriptureReferenceChapterForward, scriptureReferenceChapterBackward, scriptureReferenceVerseBackward);
 				
