@@ -5,6 +5,7 @@
 <a href="2026-07-24T1910AlphabetSequenceStub.html">2026-07-24T1910AlphabetSequenceStub.html</a><br>
 <a href="2026-05-09T0039AlphabetSequence.txt">2026-05-09T0039AlphabetSequence.txt</a><br>
 <a href="DateComputation.html">DateComputation.html</a><br>
+<a href="2026-09-10_-_BiblePercentage_-_19.35.html">2026-09-10 BiblePercentage 19.35</a><br>
 <a href="BibleReference.html">BibleReference.html</a><br>
 <a href="2026-08-28T0346_-_88.html">2026-08-28T0346 88</a><br>
 <a href="2026-04-19T0058CentreForProductivity_-_KenAdeniji_-_1-Page_A4_Profile.txt">2026-04-19T0058 Centre for Productivity 1-Page A4 Profile of Ken Adeniji</a><br>
