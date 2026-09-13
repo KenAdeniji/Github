@@ -131,38 +131,38 @@ tr:nth-child(even) {
 				let column = "";
 	
 				target = parseFloat(wordElement.value);
-				column = columnVerseIDSequencePercent;
+				column = ColumnVerseIDSequencePercent;
 				const closestVerseForward = Bible.Table.reduce((prev, curr) => {
 					return (Math.abs(curr[column] - target) < Math.abs(prev[column] - target)) ? curr : prev;
 				});
 				console.debug(target, column, closestVerseForward);
 
 				target = parseFloat(wordElement.value);
-				column = columnChapterIDSequencePercent;
+				column = ColumnChapterIDSequencePercent;
 				const closestChapterForward = Bible.Table.reduce((prev, curr) => {
 					return (Math.abs(curr[column] - target) < Math.abs(prev[column] - target)) ? curr : prev;
 				});
 				console.debug(target, column, closestVerseForward);
 
 				target = 100 - parseFloat(wordElement.value);
-				column = columnChapterIDSequencePercent;
+				column = ColumnChapterIDSequencePercent;
 				const closestChapterBackward = Bible.Table.reduce((prev, curr) => {
 					return (Math.abs(curr[column] - target) < Math.abs(prev[column] - target)) ? curr : prev;
 				});
 				console.debug(target, column, closestChapterBackward);
 
 				target = 100 - parseFloat(wordElement.value);
-				column = columnVerseIDSequencePercent;
+				column = ColumnVerseIDSequencePercent;
 				const closestVerseBackward = Bible.Table.reduce((prev, curr) => {
 					return (Math.abs(curr[column] - target) < Math.abs(prev[column] - target)) ? curr : prev;
 				});
 				console.debug(target, column, closestChapterBackward);
 				
-				scriptureReferenceVerseForward = closestChapterForward.BookTitle + " " + closestChapterForward.ChapterID + ":" + closestChapterForward.VerseID;
+				scriptureReferenceVerseForward = closestVerseForward.BookTitle + " " + closestVerseForward.ChapterID + ":" + closestVerseForward.VerseID;
 				scriptureReferenceChapterForward = closestChapterForward.BookTitle + " " + closestChapterForward.ChapterID;
 
 				scriptureReferenceChapterBackward = closestChapterBackward.BookTitle + " " + closestChapterBackward.ChapterID;
-				scriptureReferenceVerseBackward = closestChapterBackward.BookTitle + " " + closestChapterBackward.ChapterID + ":" + closestChapterBackward.VerseID;
+				scriptureReferenceVerseBackward = closestVerseBackward.BookTitle + " " + closestVerseBackward.ChapterID + ":" + closestVerseBackward.VerseID;
 				
 				console.debug(scriptureReferenceVerseForward, scriptureReferenceChapterForward, scriptureReferenceChapterBackward, scriptureReferenceVerseBackward);
 				
@@ -191,8 +191,8 @@ tr:nth-child(even) {
 				}
 			}
 			
-			const columnVerseIDSequencePercent = "VerseIDSequencePercent";
-			const columnChapterIDSequencePercent = "ChapterIDSequencePercent";
+			const ColumnVerseIDSequencePercent = "VerseIDSequencePercent";
+			const ColumnChapterIDSequencePercent = "ChapterIDSequencePercent";
 		</script>
 	</body>
 </html>
