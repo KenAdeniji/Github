@@ -309,7 +309,7 @@ tr:nth-child(even) {
 				
 				resultSetTextAreaElement.value = JSON.stringify(wordsSplit);
 				
-				var resultSetTableStub = `<thead><tr><th>Key</th><th>Value</th></tr></thead><tbody>`;
+				var resultSetTableStub = `<caption>Occurrences: ${Object.keys(wordsSplit).length}</caption><thead><tr><th>Key</th><th>Value</th></tr></thead><tbody>`;
 				for (const [key, value] of Object.entries(wordsSplit)) {
 					resultSetTableStub += `<tr><td>${key}</td><td>${value}</td></tr>`;
 				}				
