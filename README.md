@@ -7,6 +7,7 @@
 <a href="DateComputation.html">Date Computation</a><br>
 <a href="2026-09-10_-_BiblePercentage_-_19.35.html">2026-09-10 BiblePercentage 19.35</a><br>
 <a href="2026-09-15_-_BibleFilter.html">2026-09-15 Bible Filter</a><br>
+<a href="2026-10-05T0217Microsoft Internet Information Services (IIS) Configurable Parameter Filename. Graduate pending English and German conflict. Object-oriented metrics conversion, from to parameters.html">2026-10-05 Scene 1 I am working with software engineers who showed me how to configure Microsoft Internet Information Services (IIS). 1 of the configurable parameters was a filename. Scene 2 A person should graduate, but he is unable to because of the English and German conflict. Scene 3 I was shown a software code listing which uses object-oriented programming (OO) for metrics conversion. The from and to metrics units to convert are in method parameters.</a><br>
 <a href="BibleReference.html">Bible Reference</a><br>
 <a href="2026-08-28T0346_-_88.html">2026-08-28T0346 88</a><br>
 <a href="2026-04-19T0058CentreForProductivity_-_KenAdeniji_-_1-Page_A4_Profile.txt">2026-04-19T0058 Centre for Productivity 1-Page A4 Profile of Ken Adeniji</a><br>
