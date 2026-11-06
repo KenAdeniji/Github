@@ -25,7 +25,7 @@
 	</head>
 	<body>
 		<div align="center">
-			<textarea id="resultSet" align="left"></textarea>
+			<textarea id="resultSet" align="left" rows="40" columns="75"></textarea>
 		</div>
 		<script>
 			const 	resultSetElement = document.getElementById("resultSet");
@@ -52,14 +52,13 @@
 			  });
 
 			  console.log(data);
-			  resultSetElement.value = data;
+			  resultSetElement.value = headers.toString() + JSON.stringify(data);
 			  
 			}
 
 			window.addEventListener("load", pageLoad, false);
 
-			//const CSVFilename = "../2026-11-06Chapter14Verse9_Chapter14Verse7.csv"
-			const CSVFilename = "https://kenadeniji.github.io/Github/2026-11-06Chapter14Verse9_Chapter14Verse7.csv"
+			const CSVFilename = "https://kenadeniji.github.io/Github/2026-11-03Chapter14Verse9_Chapter14Verse7.csv"
 		</script>		
 	</body>
 </html>
