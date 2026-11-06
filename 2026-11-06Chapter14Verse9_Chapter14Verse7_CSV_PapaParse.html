@@ -46,8 +46,10 @@
 */
 				Papa.parse(CSVFilename, {
 					header: true,
+/*			
 					download: true,
 					dynamicTyping: true,
+*/			
 					worker: true,
 					step: function(results) {
 						console.log("Row:", results.data);
@@ -57,8 +59,8 @@
 
 			window.addEventListener("load", pageLoad, false);
 
-			//const CSVFilename = "../2026-11-06Chapter14Verse9_Chapter14Verse7.csv"
-			const CSVFilename = "https://kenadeniji.github.io/Github/2026-11-06Chapter14Verse9_Chapter14Verse7.csv"
+			const CSVFilename = "../2026-11-06Chapter14Verse9_Chapter14Verse7.csv"
+			//const CSVFilename = "https://kenadeniji.github.io/Github/2026-11-06Chapter14Verse9_Chapter14Verse7.csv"
 		</script>		
 	</body>
 </html>
