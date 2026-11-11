@@ -2,6 +2,7 @@
 <a href="2015-10-23DoctoralDissertation.html">2015-10-23 Doctoral Dissertation</a><br>
 <a href="KenAdenijiResume.html">Resume</a><br>
 <a href="2025-10-20KenAdenijiResume.mp3">Resume.mp3</a><br>
+<a href="2026-11-10WhatIHaveAsAPeriod.html">2026-11-10 What I have as a period</a><br>
 <a href="2026-11-06T1200Chapter14Verse9_Chapter14Verse7_CSV_Fetch.html">2026-11-06 Chapter 14 Verse 9, Chapter 14 Verse 7 CSV Fetch</a><br>
 <a href="2026-07-24T1910AlphabetSequenceStub.html">Alphabet Sequence</a><br>
 <a href="2026-05-09T0039AlphabetSequence.txt">2026-05-09T0039AlphabetSequence.txt</a><br>
