@@ -3,6 +3,8 @@
 	<!--
 		2026-11-10	Created.
 		2026-11-12T03:14:00	http://stackoverflow.com/questions/17732897/difference-between-two-dates-in-years-months-days-in-javascript
+		2026-11-12T04:21:00	http://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/th
+			Why does ... look elsewhere?
 	-->
 		<meta charset="UTF-8"/>
 		<meta name="description" content="What I have ... as a period."/>
@@ -116,6 +118,13 @@
 			//import { WhatIHaveAsAPeriod } from "./2026-11-10IlyaKantor_-_JavaScript.info_-_WhatIHaveAsAPeriod.js"
 			let {WhatIHaveAsAPeriod} = await import("./2026-11-10IlyaKantor_-_JavaScript.info_-_WhatIHaveAsAPeriod.js")
 
+			function addTableData(row, content)
+			{		
+				let td = document.createElement("td");
+				td.textContent = content;
+				row.appendChild(td);
+			}
+			
 			function iterateTable()
 			{		
 				var table = document.getElementById("whatIHaveAsAPeriod");
@@ -144,20 +153,11 @@
 
 					// Compute the calculation
 					const days = WhatIHaveAsAPeriod.daysDifference(datedFrom, datedUntil);
-				
-					// Write the output back to the computed column cell
-					tdDays = document.createElement("td");
-					tdDays.textContent = days;
-					row.appendChild(tdDays);
-
-					tdBiblicalCalendar = document.createElement("td");
-					tdBiblicalCalendar.textContent = WhatIHaveAsAPeriod.biblicalCalendarDifference(days);
-					row.appendChild(tdBiblicalCalendar);
-
-					tdGregorianCalendar = document.createElement("td");
 					diff = WhatIHaveAsAPeriod.getDateDifference(datedFrom, datedUntil);
-					tdGregorianCalendar.textContent = `${diff.years} years, ${diff.months} months, ${diff.days} days`;
-					row.appendChild(tdGregorianCalendar);
+					
+					addTableData(row, days);
+					addTableData(row, WhatIHaveAsAPeriod.biblicalCalendarDifference(days));
+					addTableData(row, `${diff.years} years, ${diff.months} months, ${diff.days} days`);
 				}
 			}
 
